@@ -18,6 +18,6 @@ function logout() {
  *  戻るボタンサブミット
  */
 function doSubmit(action) {
-    document.forms[0].action = "/kikin-for-Struts-bug/logout.do";
+    document.forms[0].action = action;
     document.forms[0].submit();
 }
