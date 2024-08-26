@@ -137,7 +137,7 @@
       </action>
       
       <!-- シフトマスタメンテナンス 初期表示 -->
-      <action
+       <action
         path="/shiftMstMnt"
         type="action.mst.ShiftMstMntInitAction"
         name="shiftMstMntForm"
@@ -148,7 +148,7 @@
       </action>
       <!-- シフトマスタメンテナンス 更新 -->
       <action
-        path="/shiftMstMntUpdata"
+        path="/shiftMstMntUpdate"
         type="action.mst.ShiftMstMntUpdateAction"
         name="shiftMstMntForm"
         scope="session"
@@ -163,7 +163,7 @@
         name="shiftMstMntForm" 
         scope="session"
         validate="true">
-        <forward name="success" path="/pages/cmn/menu.jsp" redirect="true"/>
+        <forward name="success" path="/pages/mst/shiftMstMntRegister.jsp" redirect="true"/>
       </action>
       <!-- シフトマスタメンテナンス 登録 -->
       <action
@@ -183,13 +183,14 @@
         <forward name="success" path="/menu.do"/>
       </action>
 
+
       <!-- 出勤希望日確認初期表示 -->
       <action
         path="/workDateRequestCheckInit"
         type="action.shk.WorkDateRequestCheckInitAction"
         name="workDateRequestCheckForm"
         scope="session">
-        <forward name="success" path="pages/shk/workDateRequestCheck.jsp"/>
+        <forward name="success" path="/pages/shk/workDateRequestCheck.jsp"/>
       </action>
       <!-- 出勤希望日確認 -->
       <action
@@ -418,6 +419,7 @@
       <action
         path="/shiftPattern"
         type="action.cmn.ShiftPatternAction"
+        name="shiftPatternForm"
         scope="session">
         <forward name="success" path="/pages/cmn/shiftPattern.jsp"/>
       </action>
