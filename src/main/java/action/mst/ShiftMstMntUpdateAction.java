@@ -87,8 +87,9 @@ public class ShiftMstMntUpdateAction extends Action{
             shiftMstMntForm.setShiftMstMntBeanList(dtoToForm(shiftMstMntDtoList));
         }
 
-        return null;
+        return mapping.findForward(forward);
     }
+    
 
     /**
      * リクエスト情報をDtoのリストにセットする。

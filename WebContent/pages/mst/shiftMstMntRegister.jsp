@@ -120,7 +120,7 @@
         </table>
       </div>
       <div id="businessBody">
-        <html:form action="/shiftMstMntRegister">
+        <html:form action="/shiftMstMntRegister.do">
           <div style="width: 630px;  margin: 0 auto;">
             <table class="tableHeader">
               <tr>

@@ -159,7 +159,7 @@
         </table>
       </div>
       <div id="businessBody">
-        <html:form  action="/shiftMstMntUpdate">
+        <html:form  action="/shiftMstMntUpdate.do">
           <div style="width: 600px; margin: 0 auto;">
             <table class="tableHeader">
               <tr>
