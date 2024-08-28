@@ -73,7 +73,7 @@
         name="loginForm"
         scope="session"
         validate="false">
-        <forward name="success" path="/pages/cmn/menu.jsp"/>
+        <forward name="success" path="/pages/cmn/login.jsp"/>
       </action>
 
       <!-- メニュー -->
@@ -386,7 +386,7 @@
       <!-- 月別シフト確認初期表示 -->
       <action
         path="/monthlyShiftCheckInit"
-        type="action.mth.MonthlyShiftCheckInit"
+        type="action.mth.MonthlyShiftCheckInitAction"
         name="monthlyShiftCheckForm"
         scope="session">
         <forward name="success" path="/pages/mth/monthlyShiftCheck.jsp"/>
