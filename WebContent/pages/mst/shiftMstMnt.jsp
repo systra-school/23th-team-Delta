@@ -105,7 +105,7 @@
                     }
                 }
                 if (!breakTimeErrMsg) {
-                    if (!checkHalfWidthKana(breakTime)) {
+                    if (!checkTime(breakTime)) {
                         var strArr = ['休憩時間'];
                         breakTimeErrMsg = getMessage('E-MSG-000006', strArr);
                         namedItem('shiftMstMntBeanList['+ i +'].breakTime').style.backgroundColor = 'blue';
@@ -208,10 +208,10 @@
                       </tr>
                     </table>
                   </td>
-                    <html:text property="breakTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/>
-                 
+				<td width="100px"  align="center">
+					<html:text property="breakTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/>
                   <td width="70px"  align="center">
-                    <html:hidden property="deleteShiftId" name="shiftMstMntBeanList"  value="<%= shiftId %>"  onchange='<%="checkDeleteFlg(" + idx + ")" %>'></html:hidden>
+                    <html:checkbox property="deleteShiftId" name="shiftMstMntBeanList"  value="<%= shiftId %>"  onchange='<%="checkDeleteFlg(" + idx + ")" %>'></html:checkbox>
                     <html:hidden property="deleteFlg" name="shiftMstMntBeanList" value="false" indexed="true"/>
                   </td>
                 </tr>
