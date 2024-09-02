@@ -86,7 +86,6 @@
           <tr>
             <td id="headLeft">
               <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/employeeMstMntRegisterBack.do')" />
-              <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
             </td>
             <td id="headCenter">
               社員マスタメンテナンス画面（新規登録）

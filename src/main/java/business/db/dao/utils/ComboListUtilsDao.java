@@ -48,7 +48,6 @@ public class ComboListUtilsDao extends Dao {
             comboMap.put("-1", CommonConstant.BLANK);
         }
 
-        boolean displayBool = mcategorySearch.getDisplay();
 
         try {
             // コネクション接続
@@ -56,23 +55,11 @@ public class ComboListUtilsDao extends Dao {
 
             StringBuffer strSql = new StringBuffer();
             strSql.append("SELECT * FROM m_category ");
-            strSql.append("WHERE category_id = ? ");
-            if (displayBool) {
-                strSql.append("AND display = ? ");
-            }
             strSql.append("ORDER BY display_order ASC ");
 
             PreparedStatement ps = connection.prepareStatement(strSql.toString());
 
-            int index = 1;
-            // 分類ＩＤ
-            ps.setString(index, mcategorySearch.getCategoryId());
-            index++;
-            // 表示
-            if (displayBool) {
-                ps.setBoolean(index, displayBool);
-                index++;
-            }
+           
             // ログ出力
             log.info(ps);
 
