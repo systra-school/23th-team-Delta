@@ -113,7 +113,7 @@
                 }
 
                 // from - to のチェック
-                if (!checkTimeCompare(startTime, endTime)) {
+                if (checkTimeCompare(startTime, endTime)) {
                   if (checkTime(startTime) && checkTime(endTime)) {
                       fromToErrMsg = getMessageCodeOnly('E-MSG-000005');
                       namedItem('shiftMstMntBeanList['+ i +'].startTime').style.backgroundColor = 'red';
@@ -197,19 +197,19 @@
                     <table class="full-width">
                       <tr>
                         <td align="center" class="non-border">
-                          <html:text property="endTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/>
+                          <html:text property="startTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/>
                         </td>
                         <td align="center" class="non-border">
                             &#xFF5E;
                         </td>
                         <td align="center" class="non-border">
-                          <html:text property="startTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/>
+                          <html:text property="endTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/>
                         </td>
                       </tr>
                     </table>
                   </td>
 				<td width="100px"  align="center">
-					<html:text property="breakTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/>
+					<html:text property="breakTime" name="shiftMstMntBeanList" size="5" maxlength="5" indexed="true"/>
                   <td width="70px"  align="center">
                     <html:checkbox property="deleteShiftId" name="shiftMstMntBeanList"  value="<%= shiftId %>"  onchange='<%="checkDeleteFlg(" + idx + ")" %>'></html:checkbox>
                     <html:hidden property="deleteFlg" name="shiftMstMntBeanList" value="false" indexed="true"/>

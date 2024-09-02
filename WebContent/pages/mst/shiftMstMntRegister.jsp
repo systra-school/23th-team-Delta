@@ -76,7 +76,7 @@
           }
 
           // from - to のチェック
-          if (!checkTimeCompare(varStartTime, varEndTime)) {
+          if (checkTimeCompare(varStartTime, varEndTime)) {
             if (checkTime(varStartTime) && checkTime(varEndTime)) {
                 fromToErrMsg = getMessageCodeOnly('E-MSG-000005');
                 startTime.style.backgroundColor = 'red';
@@ -143,22 +143,22 @@
             <table class="tableBody">
               <tr>
                 <td width="180px"  align="center">
-                  <html:text property="symbol" size="20" maxlength="10"  value=""/>
+                  <html:text property="shiftName" size="20" maxlength="10"  value=""/>
                 </td>
                 <td width="70px"  align="center">
-                  <html:text property="shiftName" size="2" maxlength="2"  value=""/>
+                  <html:text property="symbol" size="2" maxlength="2"  value=""/>
                 </td>
                 <td width="270px"  align="center">
                   <table class="full-width" >
                     <tr>
                       <td align="center" class="non-border">
-                        <html:text property="endTime" size="5" maxlength="10" value=""/>
+                        <html:text property="startTime" size="5" maxlength="10" value=""/>
                       </td>
                       <td align="center" class="non-border">
                           &#xFF5E;
                       </td>
                       <td align="center" class="non-border">
-                        <html:text property="startTime" size="5" maxlength="10" value=""/>
+                        <html:text property="endTime" size="5" maxlength="10" value=""/>
                       </td>
                     </tr>
                   </table>
