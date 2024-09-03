@@ -133,7 +133,7 @@
         type="action.mst.EmployeeMstMntRegisterBackAction"
         name="employeeMstMntRegisterForm"
         scope="session">
-        <forward name="success" path="/menu.do"/>
+        <forward name="success" path="/employeeMstMnt.do"/>
       </action>
       
       <!-- シフトマスタメンテナンス 初期表示 -->
