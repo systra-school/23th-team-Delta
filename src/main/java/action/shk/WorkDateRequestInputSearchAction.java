@@ -65,7 +65,7 @@ public class WorkDateRequestInputSearchAction extends WorkDateRequestAbstractAct
         String yearMonth = workDateRequestInputForm.getYearMonth();
         
         // ロジック生成
-        WorkDateRequestLogic workDateRequestLogic = new WorkDateRequestLogic	();
+        WorkDateRequestLogic workDateRequestLogic = new WorkDateRequestLogic();
         
         // 対象年月の月情報を取得する
         List<DateBean> dateBeanList = CommonUtils.getDateBeanList(yearMonth);
