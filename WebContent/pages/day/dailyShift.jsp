@@ -76,15 +76,17 @@
       <div id="header">
         <table class="full-width">
           <tr>
-            <td id="headLeft">
-            	<input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
+           
+             <td id="headLeft">
+            	<input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
             
             </td>
             <td id="headCenter">
               日別シフト確認画面
             </td>
-            <td id="headRight">
-            	<input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
+           
+             <td id="headRight">
+            	<input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
             
             </td>
           </tr>
@@ -96,7 +98,7 @@
           <html:form>
             <div style="height: 20px; margin-left:405px;">
               表示年月：
-              <html:link href="/kikin-for-Struts-bug/dailyShiftPage.do?paging=next">前日</html:link>
+              <html:link href="/kikin-for-Struts-bug/dailyShiftPage.do?paging=back">前日</html:link>
               <bean:write name="dailyShiftForm" property="yearMonthDayDisplay"/>
               <html:link href="/kikin-for-Struts-bug/dailyShiftPage.do?paging=next">翌日</html:link>
             </div>

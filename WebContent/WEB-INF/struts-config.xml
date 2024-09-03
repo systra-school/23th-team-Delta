@@ -50,7 +50,7 @@
     <global-forwards>
       <forward
         name="welcome"
-        path="/Welcome.do"/>
+        path="/welcome.do"/>
     </global-forwards>
 
     <action-mappings>

@@ -17,7 +17,6 @@ import org.apache.struts.action.ActionMapping;
 
 import business.dto.day.DailyShiftDto;
 import business.logic.day.DailyShiftLogic;
-import business.logic.utils.CheckUtils;
 import business.logic.utils.CommonUtils;
 import constant.CommonConstant;
 import constant.RequestSessionNameConstant;
@@ -62,9 +61,9 @@ public class DailyShiftInitAction extends DailyShiftAbstractAction {
         // システム日付のシフトデータを取得する
         List<DailyShiftDto> dailyShiftDtoList = dailyShiftLogic.getDailyShiftDtoList(yearMonthDay);
 
-        if (CheckUtils.isEmpty(dailyShiftDtoList)) {	
-            forward = CommonConstant.NODATA;
-        }
+//        if (CheckUtils.isEmpty(dailyShiftDtoList)) {	
+//            forward = CommonConstant.NODATA;
+//        }
 
         // フォームへ一覧をセットする
         dailyShiftForm.setDailyShiftBeanList(dtoToForm(dailyShiftDtoList));
