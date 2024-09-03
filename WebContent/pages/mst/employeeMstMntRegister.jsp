@@ -42,6 +42,8 @@
             var passwordVar = password.value;
             // 社員名カナ
             var employeeNameKanaVar = employeeNameKana.value;
+            //社員名
+            var employeeNameVar = employeeName.value;
             // エラーメッセージ
             var errorMsg = '';
 
@@ -57,11 +59,25 @@
                 password.style.backgroundColor = 'red';
             }
             // 社員名カナ
-            if (!checkTime(employeeNameKanaVar)) {
+            if (!checkHalfWidthKana(employeeNameKanaVar)) {
                 // エラー有り
                 var strArr = ['社員名カナ'];
                 errorMsg += getMessage('E-MSG-000006', strArr);
                 employeeNameKana.style.backgroundColor = 'red';
+            }
+            
+            if (!checkRequired(employeeNameKanaVar)) {
+                // エラー有り
+                var strArr = ['社員名カナ'];
+                errorMsg += getMessage('E-MSG-000001', strArr);
+                employeeNameKana.style.backgroundColor = 'red';
+            }
+            
+            if (!checkRequired(employeeNameVar)) {
+                // エラー有り
+                var strArr = ['社員名'];
+                errorMsg += getMessage('E-MSG-000001', strArr);
+                employeeName.style.backgroundColor = 'red';
             }
 
             if (errorMsg) {

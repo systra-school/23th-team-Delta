@@ -30,47 +30,37 @@ public class EmployeeMstMntLogic {
      * @param loginUserDto ログインユーザーDto
      * @author naraki
      */
-    public void updateM_employee(List<EmployeeMstMntDto> employeeMstMntDtoList, LoginUserDto loginUserDto) throws Exception{
+	public void updateM_employee(List<EmployeeMstMntDto> employeeMstMntDtoList, LoginUserDto loginUserDto) throws Exception {
+	    // 社員マスタDao
+	    EmployeeMstMntDao employeeMstMntDao = new EmployeeMstMntDao();
+	    // コネクション
+	    Connection connection = employeeMstMntDao.getConnection();
+	    // トランザクション処理
+	    connection.setAutoCommit(false);
+	    try {
+	        for (EmployeeMstMntDto employeeMstMntDto : employeeMstMntDtoList) {
+	            boolean deleteFlg = employeeMstMntDto.getDeleteFlg();
+	            if (deleteFlg) {
+	                // 削除
+	                employeeMstMntDao.deleteEmployeeMst(employeeMstMntDto.getEmployeeId());
+	            } else {
+	                // 更新
+	                employeeMstMntDao.updateEmployeeMst(employeeMstMntDto, loginUserDto);
+	            }
+	        }
+	    } catch (Exception e) {
+	        // ロールバック処理
+	        connection.rollback();
+	        // 切断
+	        connection.close();
+	        throw e;
+	    }
+	    // コミット
+	    connection.commit();
+	    // 切断
+	    connection.close();
+	}
 
-        // 社員マスタDao
-        EmployeeMstMntDao employeeMstMntDao = new EmployeeMstMntDao();
-        // コネクション
-        Connection connection = employeeMstMntDao.getConnection();
-
-        // トランザクション処理
-        connection.setAutoCommit(false);
-
-        try {
-            for (int i = 0; i < employeeMstMntDtoList.size(); i++) {
-
-                EmployeeMstMntDto employeeMstMntDto = employeeMstMntDtoList.get(i);
-                boolean deleteFlg = employeeMstMntDto.getDeleteFlg();
-
-                if (deleteFlg) {
-                    // 削除
-                    employeeMstMntDao.updateEmployeeMst(employeeMstMntDto, loginUserDto);
-                } else {
-                    // 更新
-                    employeeMstMntDao.updateEmployeeMst(employeeMstMntDto, loginUserDto);
-                }
-
-            }
-        } catch (Exception e) {
-            // ロールバック処理
-            connection.rollback();
-
-            // 切断
-            connection.close();
-
-            throw e;
-        }
-
-        // コミット
-        connection.commit();
-        // 切断
-        connection.close();
-
-    }
 
     /**
      * 社員マスタの登録処理を行う

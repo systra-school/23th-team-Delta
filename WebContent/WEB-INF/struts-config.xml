@@ -121,7 +121,7 @@
       <!-- 社員マスタメンテナンス 登録 -->
       <action
         path="/employeeMstMntRegister"
-        type="action.mst.EmployeeMstMntRegister"
+        type="action.mst.EmployeeMstMntRegisterAction"
         name="employeeMstMntRegisterForm"
         scope="session"
         validate="true">
