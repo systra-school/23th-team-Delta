@@ -48,7 +48,7 @@ public class ShiftMstMntLogic {
 
                 if (deleteFlg) {
                     // 削除
-                    shiftMstMntDao.deleteShiftMst(shiftMstMntDto.getShiftName());
+                    shiftMstMntDao.deleteShiftMst(shiftMstMntDto.getShiftId());
                 } else {
                     // 更新
                     shiftMstMntDao.updateShiftMst(shiftMstMntDto, loginUserDto);
