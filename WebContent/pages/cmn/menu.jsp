@@ -25,19 +25,18 @@
         <table class="full-width">
           <tr>
             <td id="headLeft">
-              　
             </td>
             <td id="headCenter">
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="authorityId"
                          value="<%=CommonConstant.Authority.ADMIN.getId() %>">
-                　　メニュー(管理者)
+                メニュー(管理者)
             </logic:equal>
 
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="authorityId"
                          value="<%=CommonConstant.Authority.USER.getId() %>">
-                　　メニュー(一般)
+                メニュー(一般)
             </logic:equal>
             </td>
             <td id="headRight">
@@ -159,5 +158,7 @@
           </tr>
         </table>
       </div>
+  </body>
+</html>>
   </body>
 </html>
