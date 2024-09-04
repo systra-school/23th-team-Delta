@@ -91,7 +91,7 @@
 	                }
 
 	                // from - to のチェック
-	                if (!checkTimeCompare(startTime, endTime)) {
+	                if (checkTimeCompare(startTime, endTime)) {
 	                  if (checkTime(startTime) && checkTime(endTime)) {
 	                      fromToErrMsg = getMessageCodeOnly('E-MSG-000005');
 	                      namedItem('workRecordInputList['+ i +'].startTime').style.backgroundColor = 'red';
@@ -242,10 +242,10 @@
                     <bean:write name="workRecordInputList" property="symbol" /><br>
                   </td>
                   <td width="100px" align="center">
-                    <html:text style="text-align:center" size="5" maxlength="5" name="workRecordInputList" property="endTime" indexed="true"></html:text><br>
+                    <html:text style="text-align:center" size="5" maxlength="5" name="workRecordInputList" property="startTime" indexed="true"></html:text><br>
                   </td>
                   <td width="100px" align="center">
-                    <html:text style="text-align:center" size="5" maxlength="5" name="workRecordInputList" property="startTime" indexed="true"></html:text><br>
+                    <html:text style="text-align:center" size="5" maxlength="5" name="workRecordInputList" property="endTime" indexed="true"></html:text><br>
                   </td>
                   <td width="100px" align="center">
                     <html:text style="text-align:center" size="5" maxlength="5" name="workRecordInputList" property="breakTime" indexed="true"></html:text><br>
