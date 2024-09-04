@@ -133,10 +133,6 @@
             </html:form>
           </div>
           
-           <html:form action="/shiftMstMnt">
-              <input type="submit" value="シフトマスタメンテナンス" class="bigButton" />
-            </html:form>
-          
           </div>
            </logic:equal>
         </div>          
