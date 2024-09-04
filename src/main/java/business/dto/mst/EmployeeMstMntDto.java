@@ -10,35 +10,35 @@ import java.util.Date;
 
 /**
  * 説明：社員マスタDto
+ * 
  * @author naraki
  *
  */
 public class EmployeeMstMntDto {
 
-    /** 社員ID */
-    private String employeeId;
-    /** パスワード */
-    private String password;
-    /** 社員名 */
-    private String employeeName;
-    /** 社員名カナ */
-    private String employeeNameKana;
-    /** 権限ID */
-    private String authorityId;
-    /** 作成ユーザID */
-    private String CreaterEmployeeId;
-    /** 作成日付 */
-    private Date CreationDatetime;
-    /** 更新ユーザID */
-    private String UpdaterEmployeeId;
-    /** 更新日付 */
-    private Date UpdateDatetime;
-    /** 削除フラグ */
-    private boolean deleteFlg;
-    
-    
+	/** 社員ID */
+	private String employeeId;
+	/** パスワード */
+	private String password;
+	/** 社員名 */
+	private String employeeName;
+	/** 社員名カナ */
+	private String employeeNameKana;
+	/** 権限ID */
+	private String authorityId;
+	/** 作成ユーザID */
+	private String CreaterEmployeeId;
+	/** 作成日付 */
+	private Date CreationDatetime;
+	/** 更新ユーザID */
+	private String UpdaterEmployeeId;
+	/** 更新日付 */
+	private Date UpdateDatetime;
+	/** 削除フラグ */
+	private boolean deleteFlg;
+
 	public String getEmployeeId() {
-		return password;
+		return employeeId;
 	}
 
 	public void setEmployeeId(String employeeId) {
@@ -46,7 +46,7 @@ public class EmployeeMstMntDto {
 	}
 
 	public String getPassword() {
-		return employeeId;
+		return password;
 	}
 
 	public void setPassword(String password) {
@@ -81,32 +81,32 @@ public class EmployeeMstMntDto {
 		return CreaterEmployeeId;
 	}
 
-	public void setCreaterEmployeeId(String CreaterEmployeeId) {
-		this.CreaterEmployeeId = CreaterEmployeeId;
+	public void setCreaterEmployeeId(String createrEmployeeId) {
+		CreaterEmployeeId = createrEmployeeId;
 	}
 
 	public Date getCreationDatetime() {
 		return CreationDatetime;
 	}
 
-	public void setCreationDatetime(Date CreationDatetime) {
-		this.CreationDatetime = CreationDatetime;
+	public void setCreationDatetime(Date creationDatetime) {
+		CreationDatetime = creationDatetime;
 	}
 
 	public String getUpdaterEmployeeId() {
 		return UpdaterEmployeeId;
 	}
 
-	public void setUpdaterEmployeeId(String UpdaterEmployeeId) {
-		this.UpdaterEmployeeId = UpdaterEmployeeId;
+	public void setUpdaterEmployeeId(String updaterEmployeeId) {
+		UpdaterEmployeeId = updaterEmployeeId;
 	}
 
 	public Date getUpdateDatetime() {
 		return UpdateDatetime;
 	}
 
-	public void setUpdateDatetime(Date UpdateDatetime) {
-		this.UpdateDatetime = UpdateDatetime;
+	public void setUpdateDatetime(Date updateDatetime) {
+		UpdateDatetime = updateDatetime;
 	}
 
 	public boolean getDeleteFlg() {
@@ -116,4 +116,5 @@ public class EmployeeMstMntDto {
 	public void setDeleteFlg(boolean deleteFlg) {
 		this.deleteFlg = deleteFlg;
 	}
+
 }
