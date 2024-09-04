@@ -13,6 +13,7 @@ import java.util.List;
 import business.db.dao.mst.EmployeeMstMntDao;
 import business.dto.LoginUserDto;
 import business.dto.mst.EmployeeMstMntDto;
+import business.logic.utils.CheckUtils;
 import business.logic.utils.CommonUtils;
 import constant.DbConstant.M_employee;
 
@@ -100,24 +101,23 @@ public class EmployeeMstMntLogic {
 
         // 自分をリストから省く
         // 削除対象
-//        EmployeeMstMntDto removeM_employeeDto = null;
-////        m_employeeList = null;
-//
-//        for (EmployeeMstMntDto m_employeeDto : m_employeeList) {
-//        	
-//            String employeeId = m_employeeDto.getEmployeeId();
-//
-//            if (loginUserDto.getEmployeeId().equals(employeeId)) {
-//            	
-//                removeM_employeeDto = m_employeeDto;
-//                break;
-//            }
-//        }
-//
-//        if (!CheckUtils.isEmpty(removeM_employeeDto)) {
-//            // 削除対象が空でない場合
-//            m_employeeList.remove(removeM_employeeDto);
-//        }
+        EmployeeMstMntDto removeM_employeeDto = null;
+
+        for (EmployeeMstMntDto m_employeeDto : m_employeeList) {
+        	
+            String employeeId = m_employeeDto.getEmployeeId();
+
+            if (loginUserDto.getEmployeeId().equals(employeeId)) {
+            	
+                removeM_employeeDto = m_employeeDto;
+                break;
+            }
+        }
+
+        if (!CheckUtils.isEmpty(removeM_employeeDto)) {
+            // 削除対象が空でない場合
+            m_employeeList.remove(removeM_employeeDto);
+        }
 
         return m_employeeList;
     }
