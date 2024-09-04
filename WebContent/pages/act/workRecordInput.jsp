@@ -212,7 +212,7 @@
           </div>
             
             
-            <div style="height:450px;  margin-left: 18px ">
+            <div style="height:450px;">
             	
             	<table class="tableBody">
             	<logic:iterate id="workRecordInputList" name="workRecordInputForm" property="workRecordInputList" indexId="idx">
@@ -266,7 +266,7 @@
                     
                   </td>
                   <td width="220px" align="left">
-                    <html:text style="text-align:left" size="26" name="workRecordInputList" property="remark" indexed="true">備考がいっぱい</html:text><br>
+                    <html:text style="text-align:left" size="26" name="workRecordInputList" property="remark" indexed="true">備考</html:text><br>
                   </td>
                 </tr>
              
