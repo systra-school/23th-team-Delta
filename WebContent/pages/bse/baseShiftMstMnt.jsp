@@ -65,7 +65,7 @@
           <%-- 凡例 --%>
           <div id="pattern" style="width:476px; margin-left:80px; float:left">
             <div>
-              <table>
+              <table class="tableHeader">
                 <tr>
                   <td width="100px" align="center">
                     シフト名
