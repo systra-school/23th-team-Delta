@@ -22,7 +22,7 @@
 
 <bean:size id="dateBeanListSize" name="monthlyShiftInputForm" property="dateBeanList"/>
 <bean:size id="listSize" name="monthlyShiftInputForm" property="monthlyShiftInputBeanList"/>
-<bean:define id="showLength" value="6" type="java.lang.String"/>
+<bean:define id="showLength" value="16" type="java.lang.String"/>
 <bean:define id="offset" name="monthlyShiftInputForm" property="offset" />
 <bean:define id="color" value="" type="java.lang.String"/>
 <bean:define id="countPage" name="monthlyShiftInputForm" property="countPage" type="java.lang.Integer"/>
@@ -123,7 +123,7 @@ if (listSize > intShowLength) {
                                       label="value"/>
               </html:select>
               <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=back">前へ</html:link>
-              <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=back">次へ</html:link>
+              <html:link href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=next">次へ</html:link>
               <bean:write name="monthlyShiftInputForm" property="countPage"/>/
               <bean:write name="monthlyShiftInputForm" property="maxPage"/>
             
