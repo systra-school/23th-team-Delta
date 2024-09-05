@@ -57,7 +57,7 @@ public class DailyShiftDao extends Dao {
             strSql.append("    shift.end_time, ");
             strSql.append("    shift.break_time ");
             strSql.append("FROM ");
-            strSql.append("    m_employee emp INNER JOIN  ");
+            strSql.append("    m_employee emp LEFT OUTER JOIN  ");
             strSql.append("    (SELECT ");
             strSql.append("        ts.employee_id, ");
             strSql.append("        ms.start_time, ");
@@ -66,7 +66,7 @@ public class DailyShiftDao extends Dao {
             strSql.append("    FROM ");
             strSql.append("        t_shift ts LEFT OUTER JOIN  ");
             strSql.append("        m_shift ms ");
-            strSql.append("        ON ts.shift_id = ms.shift_id ");
+            strSql.append("        ON ts.employee_id = ms.shift_id ");
             strSql.append("    WHERE ");
             strSql.append("        year_month_day = ? ");
             strSql.append("    ) shift ON  emp.employee_id = shift.employee_id ");
