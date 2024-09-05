@@ -133,7 +133,7 @@ public class WorkDateRequestDao extends Dao{
             strSql.append("WHERE ");
             strSql.append("SUBSTRING(year_month_day, 1, 6) = ?) ts  ON ");
             strSql.append("emp.employee_id = ts.employee_id ");
-            strSql.append("WHERE emp.employee_id = 'sh0001' ");
+            //strSql.append("WHERE emp.employee_id = 'sh0001' ");
             strSql.append("ORDER BY ");
             strSql.append("employee_id,");
             strSql.append("year_month_day");
