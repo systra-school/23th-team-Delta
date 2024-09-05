@@ -58,9 +58,6 @@
               <input type="submit" value="日別シフト確認" class="bigButton" />
             </html:form>
             
-            <html:form action="/baseShiftInit">
-              <input type="submit" value="基本シフト登録" class="bigButton" />
-            </html:form>
             
           </div>
 
@@ -91,9 +88,13 @@
               <input type="submit" value="シフトマスタメンテナンス" class="bigButton" />
             </html:form>
             
-            <html:form action="/workDateRequestInputInit">
-              <input type="submit" value="出勤希望日入力" class="bigButton" />
+            <html:form action="/baseShiftInit">
+              <input type="submit" value="基本シフト登録" class="bigButton" />
             </html:form>
+            
+            <!--<html:form action="/workDateRequestInputInit">
+              <input type="submit" value="出勤希望日入力" class="bigButton" />
+            </html:form>-->
             
             
           </div>
