@@ -184,7 +184,7 @@ public class MonthlyShiftDao extends Dao{
             ps.setString(2, monthlyShiftDto.getYearMonthDay());
             ps.setString(3, monthlyShiftDto.getShiftId());
             ps.setString(4, loginUserDto.getEmployeeId());
-            ps.setString(5, loginUserDto.getEmployeeId());
+           
 
             // ログ出力
             log.info(ps);
