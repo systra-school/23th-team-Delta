@@ -173,6 +173,7 @@ public class MonthlyShiftDao extends Dao{
             strSql.append("? ");
             strSql.append(",? ");
             strSql.append(",? ");
+            strSql.append(",? ");
             strSql.append(", current_timestamp()");
             strSql.append(",? ");
             strSql.append(", current_timestamp()");
@@ -184,6 +185,7 @@ public class MonthlyShiftDao extends Dao{
             ps.setString(2, monthlyShiftDto.getYearMonthDay());
             ps.setString(3, monthlyShiftDto.getShiftId());
             ps.setString(4, loginUserDto.getEmployeeId());
+            ps.setString(5, loginUserDto.getEmployeeId());
            
 
             // ログ出力
