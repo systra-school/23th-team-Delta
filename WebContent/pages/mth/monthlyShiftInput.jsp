@@ -431,6 +431,17 @@ if (listSize > intShowLength) {
                           </td>
                           <% } %>
                           
+                          <% if (dateBeanListSize >= 31) { %>
+                          <td width="40px" align="center" valign="middle">
+                            <html:select property="shiftId31" name="monthlyShiftInputBeanList" indexed="true">
+                            <html:optionsCollection name="monthlyShiftInputForm"
+                                                    property="shiftCmbMap"
+                                                    value="key"
+                                                    label="value"/>
+                            </html:select>
+                          </td>
+                          <% } %>
+                          
                         </tr>
                       </logic:iterate>
                     </table>
