@@ -73,7 +73,7 @@ public class WorkRecordDao extends Dao {
 			strSql.append("    FROM ");
 			strSql.append("        t_work_record ");
 			strSql.append("    WHERE ");
-			strSql.append("        employee_id = 'sh0001' AND ");
+			strSql.append("        employee_id = ? AND ");
 			strSql.append("        work_day >= ? AND ");
 			strSql.append("        work_day <= ? ");
 			strSql.append("    UNION   ");
@@ -112,7 +112,7 @@ public class WorkRecordDao extends Dao {
 			ps.setString(3, endDay);
 			ps.setString(4, employeeId);
 			ps.setString(5, startDay);
-			/*ps.setString(6, endDay);*/
+			ps.setString(6, endDay);
 
 			// ログ出力
 			log.info(ps);
