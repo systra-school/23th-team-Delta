@@ -144,31 +144,39 @@ String color = "";
                   <td width="50px" align="center" class="<%=color %>">
                     <bean:write name="workRecordInputList" property="weekDay" /><br>
                   </td>
+                  
                   <td width="70px" align="center" style="vertical-align: middle;">
                     <bean:write name="workRecordInputList" property="symbol" /><br>
                   </td>
+                  
                   <td width="100px" align="center">
                     <bean:write name="workRecordInputList" property="startTime" /><br>
                   </td>
+                  
                   <td width="100px" align="center">
                     <bean:write name="workRecordInputList" property="endTime" /><br>
                   </td>
+                  
                   <td width="100px" align="center">
                     <bean:write name="workRecordInputList" property="breakTime" /><br>
                   </td>
+                  
                   <td width="100px" align="center">
-                    <bean:write name="workRecordInputList" property="actualWorkTime" />
+                    <bean:write name="workRecordInputList" property="actualWorkTime" /><br>
+                  </td>
+                  
+                  <td width="100px" align="center">
                     <bean:write name="workRecordInputList" property="holidayTime" /><br>
                   </td>
+                  
                   <td width="100px" align="center">
                     <bean:write name="workRecordInputList" property="overTime" /><br>
                   </td>
-                  <td width="100px" align="center">
-                    
-                  </td>
+                  
                   <td width="250px" align="left">
                     <bean:write name="workRecordInputList" property="remark" /><br>
                   </td>
+                  
                 </tr>
               </table>
             </logic:iterate>
