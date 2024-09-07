@@ -126,7 +126,7 @@ public class WorkDateRequestDao extends Dao{
             strSql.append("ms.symbol, ");
             strSql.append("year_month_day ");
             strSql.append("FROM ");
-            strSql.append("t_shift ts INNER JOIN ");
+            strSql.append("t_shift ts LEFT OUTER JOIN ");
             strSql.append("m_shift ms ON ");
             strSql.append("ts.request_shift_id = ");
             strSql.append("ms.shift_id ");
@@ -137,7 +137,7 @@ public class WorkDateRequestDao extends Dao{
             strSql.append("ORDER BY ");
             strSql.append("employee_id,");
             strSql.append("year_month_day");
-            strSql.append(" limit 90");
+           // strSql.append(" limit 90");
 
             PreparedStatement ps = connection.prepareStatement(strSql.toString());
 
