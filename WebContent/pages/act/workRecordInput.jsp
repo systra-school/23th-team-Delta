@@ -251,20 +251,15 @@
                     <html:text style="text-align:center" size="5" maxlength="5" name="workRecordInputList" property="breakTime" indexed="true"></html:text><br>
                   </td>
                   <td width="100px" align="center">
-                    <bean:write name="workRecordInputList" property="overTime" /><br>
-                  </td>
-                  <td width="100px" align="center">
                     <bean:write name="workRecordInputList" property="actualWorkTime" /><br>
-                   
-                    
-                     
+                   </td>
+                   <td width="100px" align="center">
+                    <bean:write name="workRecordInputList" property="overTime" /><br>
                   </td>
                   <td width="100px" align="center">
                     <bean:write name="workRecordInputList"  property="holidayTime"/> 
                     <br> 
-                    
-                    
-                  </td>
+                   </td>
                   <td width="220px" align="left">
                     <html:text style="text-align:left" size="26" name="workRecordInputList" property="remark" indexed="true">備考</html:text><br>
                   </td>
