@@ -165,12 +165,12 @@ String color = "";
                     <bean:write name="workRecordInputList" property="actualWorkTime" /><br>
                   </td>
                   
-                  <td width="100px" align="center">
-                    <bean:write name="workRecordInputList" property="holidayTime" /><br>
+                   <td width="100px" align="center">
+                    <bean:write name="workRecordInputList" property="overTime" /><br>
                   </td>
                   
                   <td width="100px" align="center">
-                    <bean:write name="workRecordInputList" property="overTime" /><br>
+                    <bean:write name="workRecordInputList" property="holidayTime" /><br>
                   </td>
                   
                   <td width="250px" align="left">
