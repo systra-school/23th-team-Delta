@@ -47,10 +47,10 @@
 				<div>ID・パスワードを入力してください。</div>
 				<html:form action="/login" onsubmit="return validateLoginForm(this)">
 
-					<html:text property="employeeId" size="16" value="sh0001" />
+					<html:text property="employeeId" size="16" value="" />
 					<br />
 					<html:password property="password" size="16" redisplay="false"
-						value="sh0001" />
+						value="" />
 					<br />
 					<br />
 					<html:submit property="submit" value="ログイン" />
