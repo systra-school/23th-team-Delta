@@ -62,7 +62,7 @@
             if (!checkHalfWidthKana(employeeNameKanaVar)) {
                 // エラー有り
                 var strArr = ['社員名カナ'];
-                errorMsg += getMessage('E-MSG-000006', strArr);
+                errorMsg += getMessage('E-MSG-000003', strArr);
                 employeeNameKana.style.backgroundColor = 'red';
             }
             
