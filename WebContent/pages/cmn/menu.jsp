@@ -92,11 +92,6 @@
               <input type="submit" value="基本シフト登録" class="bigButton" />
             </html:form>
             
-            <!--<html:form action="/workDateRequestInputInit">
-              <input type="submit" value="出勤希望日入力" class="bigButton" />
-            </html:form>-->
-            
-            
           </div>
           </div>
         </logic:equal>
