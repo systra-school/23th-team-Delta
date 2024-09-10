@@ -18,10 +18,11 @@
 
     <title>メニュー画面</title>
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=DotGothic16&family=Hachi+Maru+Pop&family=Klee+One:wght@400;600&family=Murecho:wght@100..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="wrapper">
-      <div id="header">
+  
+   <div id="header">
         <table class="full-width">
           <tr>
             <td id="headLeft">
@@ -45,6 +46,9 @@
           </tr>
         </table>
       </div>
+      
+    <div id="wrapper">
+     
       <div id="businessBody">
         <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                      property="authorityId"
@@ -70,9 +74,7 @@
             <html:form action="/monthlyShiftCheckInit">
               <input type="submit" value="月別シフト確認" class="bigButton" />
             </html:form>
-          </div>
-
-          <div class="menuBlock">
+          
             <html:form action="/workDateRequestCheckInit">
               <input type="submit" value="出勤希望日確認" class="bigButton" />
             </html:form>
