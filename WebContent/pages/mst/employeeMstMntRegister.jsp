@@ -156,16 +156,19 @@
               </tr>
             </table>
             <br>
-            <div style="font-size:30; color:red">
-            ※入力時の注意点※<br>
+            <div style="font-size:30; text-align:center; margin:0 auto; color:red">
+           ※入力時の注意点※<br>
             <br>
             </div>
-					<div style="font-size:20">
-					　・社員IDは登録時に自動で割り振られます<br>
-					　・各項目は必須入力です<br>
-					　・社員名カナは、半角カナで入力してください<br>
-					　・管理者権限の選択忘れにご注意ください<br>
+					<div style="text-align:center; margin:0 auto;">
+    					<div style="font-size:20px; display:inline-block; text-align:left;">
+        					社員IDは登録時に自動で割り振られます<br>
+        					各項目は必須入力です<br>
+        					社員名カナは、半角カナで入力してください<br>
+        					管理者権限の選択忘れにご注意ください<br>
+    					</div>
 					</div>
+
           </div>
         </html:form>
       </div>
