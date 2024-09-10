@@ -116,7 +116,7 @@
                   </div>
                 </td>
                 <td  valign="top">
-                  <div id="headRightTbl" style="overflow-y: hidden;overflow-x: hidden;width: <%=bodyRightDivWidth%>px; ">
+                  <div id="headRightTbl" style="overflow-y: hidden;overflow-x: hidden;width: 900px;">
                     <table class="tableHeader">
                       <tr>
                         <logic:iterate id="dailyShiftBean" name="dailyShiftForm" property="dailyShiftBeanList">
