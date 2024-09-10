@@ -193,6 +193,7 @@ errorbody {
 * テーブルボディのスタイル
 */
 .tableBody {
+	height:22px;
     background-color: #E0FFFF;
     border: 1px solid black;
     border-collapse: collapse;
