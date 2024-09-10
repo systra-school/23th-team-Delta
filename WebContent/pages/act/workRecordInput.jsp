@@ -126,18 +126,22 @@
     <title>勤務実績入力画面</title>
 
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
-     <style>
-      #businessBody {
-        display: flex;
-        justify-content: center;
-      }
-      .tableContainer {
-        width: 1080px;
-      }
-      .tableHeader, .tableBody {
-        margin: 0 auto;
-      }
-    </style>
+  <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=DotGothic16&family=Hachi+Maru+Pop&family=Klee+One:wght@400;600&family=Murecho:wght@100..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+  .tableHeader, .tableBody {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  .tableHeader td, .tableBody td {
+    width: 100px; 
+  }
+
+ 
+  .tableContainer {
+    margin: 0 auto;
+    width: 1080px; 
+</style>
   </head>
   <body>
     <div id="wrapper">
@@ -176,7 +180,7 @@
           <div  id="data">
             <div>
             <table class="tableHeader">
-              <tr>
+               <tr>
                 <td width="80px" align="center">
                   日付
                 </td>
@@ -212,6 +216,7 @@
           </div>
             
             
+            
             <div style="height:450px;">
             	
             	<table class="tableBody">
@@ -219,7 +224,7 @@
               
                 <tr>
                   <html:hidden name="workRecordInputList" property="employeeId" />
-                  <td width="80px" align="center">
+                  <td width="80px" align="center" height="80px">
                     <bean:write name="workRecordInputList" property="workDayDisp" /><br>
                   </td>
                   <bean:define id="weekDay" name="workRecordInputList" property="weekDay"/>
@@ -260,8 +265,8 @@
                     <bean:write name="workRecordInputList"  property="holidayTime"/> 
                     <br> 
                    </td>
-                  <td width="220px" align="left">
-                    <html:text style="text-align:left" size="26" name="workRecordInputList" property="remark" indexed="true">備考</html:text><br>
+                  <td width="300px" align="left">
+                    <html:text style="text-align:left" size="21" name="workRecordInputList" property="remark" indexed="true">備考</html:text><br>
                   </td>
                 </tr>
              
