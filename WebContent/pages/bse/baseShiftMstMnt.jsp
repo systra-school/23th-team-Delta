@@ -103,7 +103,7 @@
               </table>
             </div>
           </div>
-          <div id="data" style="width:614px; margin-left:20px; float:left">
+          <div id="data" style="width:627px; margin-left:20px; float:left">
             <div>
               <table class="tableHeader">
                 <tr>
