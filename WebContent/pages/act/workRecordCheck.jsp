@@ -39,6 +39,7 @@ String color = "";
     <title>勤務実績確認画面</title>
 
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=DotGothic16&family=Hachi+Maru+Pop&family=Klee+One:wght@400;600&family=Murecho:wght@100..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="wrapper">
@@ -61,7 +62,7 @@ String color = "";
         <html:form action="/employeeMstMntRegister" >
         <br>
           <div style="float: left; width: 100%;">
-            <div style="float: left; width: 804px; text-align: left; margin-left:22%;">
+            <div style="float: left; width: 804px; text-align: left; margin-left:16%;">
               表示年月：
               <html:select name="workRecordCheckForm" property="yearMonth" onchange="submitSearch()">
               <html:optionsCollection name="workRecordCheckForm"
@@ -70,7 +71,7 @@ String color = "";
                                       label="value"/>
               </html:select>
             </div>
-            <div style="float: left; width: 244px; text-align: center;">
+            <div style="float: left; width: 244px; text-align: left;">
               社員名：
               <html:select name="workRecordCheckForm" property="employeeId" onchange="submitSearch()">
               
@@ -84,7 +85,7 @@ String color = "";
             </div>
           </div>
           
-          <div style="width: 1088px; margin: 0 auto;">
+          <div style="width: 1075px; margin: 0 auto;">
             <table class="tableHeader">
               <tr>
                 <td width="70px" align="center">
@@ -120,7 +121,7 @@ String color = "";
               </tr>
             </table>
           </div>
-          <div style="overflow: auto; height: 400px; width: 1088px; margin: 0 auto;" >
+          <div style="overflow: auto; height: 400px; width: 1075px; margin: 0 auto;" >
             <logic:iterate id="workRecordInputList" name="workRecordCheckForm" property="workRecordInputList" indexId="idx">
               <table class="tableBody">
                 <tr>
