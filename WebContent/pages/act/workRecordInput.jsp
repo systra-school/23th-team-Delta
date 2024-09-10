@@ -163,7 +163,7 @@
       <div id="businessBody">
         <html:form action="/employeeMstMntRegister" >
           <div style="width: 100%;">
-            <div style="float: left; width: 804px; text-align: left; margin-left:100px;">
+            <div style="float: left; width: 804px; text-align: left; margin-left:100px;font-size:20px;">
               表示年月：
               <html:select name="workRecordInputForm" property="yearMonth" onchange="submitSearch()">
               <html:optionsCollection name="workRecordInputForm"
@@ -172,7 +172,7 @@
                                       label="value"/>
               </html:select>
             </div>
-            <div style="float: left; width: 284px; text-align: left;">
+            <div style="float: right; width: 284px; text-align: left;font-size:18px;">
               社員ID&nbsp;<bean:write name="workRecordInputForm" property="employeeId"/>
               ：社員名&nbsp; <bean:write name="workRecordInputForm" property="employeeName"/>
             </div>
