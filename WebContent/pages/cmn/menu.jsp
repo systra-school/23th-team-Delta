@@ -19,6 +19,11 @@
     <title>メニュー画面</title>
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=DotGothic16&family=Hachi+Maru+Pop&family=Klee+One:wght@400;600&family=Murecho:wght@100..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  	<style>
+      .flex{
+      	display: flex;
+      }
+    </style>
   </head>
   <body>
   
@@ -53,7 +58,8 @@
         <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                      property="authorityId"
                      value="<%=CommonConstant.Authority.ADMIN.getId() %>">
-          <div  style="margin-left:15%;">
+         <div  style="margin-left:15%;">
+         <div class="flex">
           <div class="menuBlock">
             <html:form action="/workRecordInputInit">
               <input type="submit" value="勤務実績入力" class="bigButton" />
@@ -64,7 +70,6 @@
             <html:form action="/baseShiftInit">
               <input type="submit" value="基本シフト登録" class="bigButton" />
             </html:form>
-            
           </div>
 
           <div class="menuBlock">
@@ -87,14 +92,12 @@
             <html:form action="/employeeMstMnt">
               <input type="submit" value="社員マスタメンテナンス" class="bigButton" />
             </html:form>
-            
             <html:form action="/shiftMstMnt">
               <input type="submit" value="シフトマスタメンテナンス" class="bigButton" />
             </html:form>
-            
-            
           </div>
-          </div>
+         </div>
+         </div>
         </logic:equal>
 
         <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
