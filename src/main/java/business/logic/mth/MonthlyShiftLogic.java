@@ -234,7 +234,7 @@ public class MonthlyShiftLogic {
         List<String> employeeNameList = new ArrayList<>();
 
         // 日毎（列ごと）のリストを配列に保持
-        List<String>[] shiftIdLists = new List[30]; // 31日分のリスト
+        List<String>[] shiftIdLists = new List[31]; // 31日分のリスト
         for (int i = 0; i < shiftIdLists.length; i++) {
             shiftIdLists[i] = new ArrayList<>(); // 初期化
         }
