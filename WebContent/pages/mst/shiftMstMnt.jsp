@@ -57,6 +57,12 @@
      * 更新処理を行う
      */
     function shiftMstMntUpdate() {
+    	
+    	// 更新確認のポップアップを表示
+        if (!confirm("内容が変更・削除されます。\n更新してもよろしいですか？")) {
+            // キャンセルされた場合、処理を中断
+            return false;
+        }
 
         // 一覧のサイズ
         var listSize = <%= beanListSize %>;
