@@ -51,13 +51,15 @@
                      value="<%=CommonConstant.Authority.ADMIN.getId() %>">
           <div  style="margin-left:15%;">
           <div class="menuBlock">
-            <html:form action="/monthlyShiftCheckInit">
-              <input type="submit" value="月別シフト確認" class="bigButton" />
+            <html:form action="/workRecordInputInit">
+              <input type="submit" value="勤務実績入力" class="bigButton" />
             </html:form>
-            <html:form action="/dailyShiftInit">
-              <input type="submit" value="日別シフト確認" class="bigButton" />
+            <html:form action="/monthlyShiftInputInit">
+              <input type="submit" value="月別シフト入力" class="bigButton" />
             </html:form>
-            
+            <html:form action="/baseShiftInit">
+              <input type="submit" value="基本シフト登録" class="bigButton" />
+            </html:form>
             
           </div>
 
@@ -65,8 +67,8 @@
             <html:form action="/workRecordCheckInit">
               <input type="submit" value="勤務実績確認" class="bigButton" />
             </html:form>
-            <html:form action="/workRecordInputInit">
-              <input type="submit" value="勤務実績入力" class="bigButton" />
+            <html:form action="/monthlyShiftCheckInit">
+              <input type="submit" value="月別シフト確認" class="bigButton" />
             </html:form>
           </div>
 
@@ -74,8 +76,8 @@
             <html:form action="/workDateRequestCheckInit">
               <input type="submit" value="出勤希望日確認" class="bigButton" />
             </html:form>
-            <html:form action="/monthlyShiftInputInit">
-              <input type="submit" value="月別シフト入力" class="bigButton" />
+            <html:form action="/dailyShiftInit">
+              <input type="submit" value="日別シフト確認" class="bigButton" />
             </html:form>
           </div>
 
@@ -88,9 +90,6 @@
               <input type="submit" value="シフトマスタメンテナンス" class="bigButton" />
             </html:form>
             
-            <html:form action="/baseShiftInit">
-              <input type="submit" value="基本シフト登録" class="bigButton" />
-            </html:form>
             
           </div>
           </div>
