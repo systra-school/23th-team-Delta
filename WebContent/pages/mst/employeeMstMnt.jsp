@@ -116,6 +116,7 @@
     <title>社員マスタメンテナンス画面</title>
 
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+    
   </head>
   <body>
     <div id="wrapper">
@@ -208,7 +209,7 @@
             </td>
             <td id="footRight">
               <input value="新規登録" type="button" class="smallButton"  onclick="employeeMstMntRegisterInit()" />
-              <input value="更新" type="button" class="smallButton"  onclick="employeeMstMntUpdate()" />
+              <input value="更新" type="button" class="smallButton" style="margin:0,auto"  onclick="employeeMstMntUpdate()" />
             </td>
           </tr>
         </table>

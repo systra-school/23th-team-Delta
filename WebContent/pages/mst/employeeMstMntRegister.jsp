@@ -151,9 +151,21 @@
                                             value="key"
                                             label="value"/>
                   </html:select>
+					
                 </td>
               </tr>
             </table>
+            <br>
+            <div style="font-size:30; color:red">
+            ※入力時の注意点※<br>
+            <br>
+            </div>
+					<div style="font-size:20">
+					　・社員IDは登録時に自動で割り振られます<br>
+					　・各項目は必須入力です<br>
+					　・社員名カナは、半角カナで入力してください<br>
+					　・管理者権限の選択忘れにご注意ください<br>
+					</div>
           </div>
         </html:form>
       </div>
@@ -164,7 +176,7 @@
               　
             </td>
             <td id="footCenter">
-              　
+             
             </td>
             <td id="footRight">
               <input value="登録" type="button" class="smallButton"  onclick="employeeMstMntRegister()" />
