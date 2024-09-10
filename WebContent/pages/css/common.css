@@ -2,9 +2,11 @@
 * body定義
 */
 body {
-    background-color: #66CCFF;
+    background-color: FEFCF3;
     overflow: hidden;
     width:100%;
+    font-family: "BIZ UDPGothic", sans-serif;
+    
 }
 errorbody {
     background-color: red;
@@ -29,8 +31,10 @@ errorbody {
 * ヘッダー定義
 */
 #header {
+	background-color:7BD3EA;
     top: 2px;
-    height: 40px;
+    height: 60px;
+    
 }
 #headLeft {
     width:15%;
@@ -38,7 +42,7 @@ errorbody {
 }
 #headCenter {
     font-size: 24px;
-    color: #FFFF00;
+    color: white;
     width:70%;
     text-align:center;
 
@@ -55,6 +59,7 @@ errorbody {
     float:left;
     text-align:center;
     padding:30px;
+    border:solid;
 }
 
 /*
@@ -173,7 +178,7 @@ errorbody {
 * テーブルヘッダーのスタイル
 */
 .tableHeader {
-    background-color: #98FB98;
+    background-color: #C4A3BF;
     font-weight: bold;
     border: 1px solid black;
     border-collapse: collapse;
