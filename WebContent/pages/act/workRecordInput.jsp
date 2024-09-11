@@ -32,6 +32,12 @@
 	 */
 	    function register() {
 
+	        /// 登録確認のポップアップを表示
+        if (!confirm("この内容で登録しますか？")) {
+            // キャンセルされた場合、処理を中断
+            return false;
+        }
+
 	        // 一覧のサイズ
 	        var listSize = <%= workRecordListSize %>;
 
@@ -110,6 +116,8 @@
 	            // エラー
 	            return false;
 	        }
+	        
+            alert("登録に成功しました！");
 
 	        doSubmit('/kikin-for-Struts-bug/workRecordInputRegister.do');
 	    }
