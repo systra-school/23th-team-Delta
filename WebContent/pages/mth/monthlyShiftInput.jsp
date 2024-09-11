@@ -34,7 +34,7 @@
 	property="maxPage" type="java.lang.Integer" />
 
 <%
-final int heightSize = 50;
+final int heightSize = 35;
 
 int intShowLength = Integer.parseInt(showLength);
 
@@ -149,7 +149,7 @@ if (listSize > intShowLength) {
 										</html:select></td>
 								</tr>
 								<tr>
-									<td width="150px" valign="top">
+									<td width="150px" valign="top" >
 										<table class="tableHeader">
 											<tr height="<%=heightSize%>px">
 												<td width="150px" align="center">&nbsp;</td>
@@ -174,7 +174,7 @@ if (listSize > intShowLength) {
 									</td>
 									<td valign="top">
 										<div
-											style="overflow-y: auto; overflow-x: auto; width: auto; height: auto; text-align: center;">
+											style="overflow-y: auto; overflow-x: auto; width: auto; height: auto;; text-align: center;">
 											<table class="tableHeader">
 												<tr height="<%=heightSize%>px">
 													<%

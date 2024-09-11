@@ -30,7 +30,7 @@
 <bean:define id="symbol" value="" type="java.lang.String"/>
 
 <%
-final int heightSize = 22;
+final int heightSize = 50;
 
 int intShowLength = Integer.parseInt(showLength);
 
@@ -100,8 +100,13 @@ if (listSize > intShowLength) {
         <html:form action="/workDateRequestCheckInit" >
           <div>
             <div id="resize" class="full-width" style="margin-left:9%;">
-              <div style="float: left; width: 804px; text-align: left; margin-left:13%;">
-	              表示年月：
+              
+             
+            <table class="widthTable" >
+            <tr>
+            <td style="margin: 0 auto;">表示年月：</td>
+	             
+	          <td style="margin: 0 auto;">
 	              <bean:define id="sessionYearMonth" name="monthlyShiftCheckForm" property="yearMonth" type="String"/>
 	              <html:select property="yearMonth" name="monthlyShiftCheckForm"  onchange="submitSearch()">
 	              <html:optionsCollection name="monthlyShiftCheckForm"
@@ -109,14 +114,9 @@ if (listSize > intShowLength) {
 	                                      value="key"
 	                                      label="value"/>
 	              </html:select>
-              </div>
-              <div style="float: left; width: 244px; text-align: center;">
-	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=back">前へ</html:link>
-	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=next">次へ</html:link>
-	              <bean:write name="monthlyShiftCheckForm" property="countPage"/>/
-	              <bean:write name="monthlyShiftCheckForm" property="maxPage"/>
-              </div>
-            <table class="widthTable" >
+              </td>
+              </tr>
+              
               <tr>
                 <td width="150px" valign="top">
                   <table class="tableHeader">
@@ -170,7 +170,7 @@ if (listSize > intShowLength) {
                       </logic:iterate>
                       </tr>
                       <logic:iterate offset="offset"  length="<%=showLength %>" id="monthlyShiftCheckBeanList" name="monthlyShiftCheckForm" property="monthlyShiftCheckBeanList">
-                        <tr class="tableBody">                                                
+                        <tr class="tableBody"  height="<%=heightSize %>px">                                                
                         <% for(int i = 1; i <= dateBeanListSize; i++) {%>
                           <td width="40px" align="center" valign="middle" class="tableBody">  
                           <%if(i<10){
@@ -202,6 +202,12 @@ if (listSize > intShowLength) {
             <td id="footCenter" style="text-align: right;">
             </td>
             <td id="footRight">
+             <div style="width: 244px;">
+	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=back">前へ</html:link>
+	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=next">次へ</html:link>
+	              <bean:write name="monthlyShiftCheckForm" property="countPage"/>/
+	              <bean:write name="monthlyShiftCheckForm" property="maxPage"/>
+              </div>
             </td>
           </tr>
         </table>
