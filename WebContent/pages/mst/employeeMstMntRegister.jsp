@@ -36,6 +36,24 @@
      * 新規登録画面へ
      */
     function employeeMstMntRegister() {
+    	
+    	var password = document.forms[0].password.value;
+        var employeeName = document.forms[0].employeeName.value;
+        var employeeNameKana = document.forms[0].employeeNameKana.value;
+        var authorityId = document.forms[0].authorityId.value;
+
+        // ポップアップに表示する内容を組み立て
+        var confirmationMessage = "以下の内容で登録しますか？\n\n" +
+            "パスワード: " + password + "\n" +
+            "社員名: " + employeeName + "\n" +
+            "社員名カナ: " + employeeNameKana + "\n" +
+            "権限: " + authorityId;
+
+        // 登録確認のポップアップを表示
+        if (!confirm(confirmationMessage)) {
+            // キャンセルされた場合、処理を中断
+            return false;
+        }
 
         with (document.forms[0]) {
             // パスワード
@@ -85,8 +103,11 @@
                 // エラー
                 return false;
             }
+            
+            alert("登録に成功しました！");
+            
         }
-
+        
         // サブミット
         doSubmit('/kikin-for-Struts-bug/employeeMstMntRegister.do');
     }

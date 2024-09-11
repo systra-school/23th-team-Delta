@@ -31,6 +31,26 @@
      * 登録処理を行う
      */
     function shiftMstMntRegister() {
+    	
+    	var shiftName = document.forms[0].shiftName.value;
+        var symbol = document.forms[0].symbol.value;
+        var startTime = document.forms[0].startTime.value;
+        var endTime = document.forms[0].endTime.value;
+        var breakTime = document.forms[0].breakTime.value;
+
+        // ポップアップに表示する内容を組み立て
+        var confirmationMessage = "以下の内容で登録しますか？\n\n" +
+            "シフト名: " + shiftName + "\n" +
+            "シンボル: " + symbol + "\n" +
+            "開始時間: " + startTime + "\n" +
+            "終了時間: " + endTime + "\n" +
+            "休憩時間: " + breakTime;
+
+        // 登録確認のポップアップを表示
+        if (!confirm(confirmationMessage)) {
+            // キャンセルされた場合、処理を中断
+            return false;
+        }
 
         // 開始時間エラーメッセージ
         var startTimeErrMsg = '';
@@ -93,6 +113,8 @@
             // エラー
             return false;
         }
+        
+        alert("登録に成功しました！");
 
         document.forms[0].submit();
     }
