@@ -44,17 +44,28 @@
 
 		<div id="businessBody">
 			<div align="center">
-				<div>ID・パスワードを入力してください。</div>
-				<html:form action="/login" onsubmit="return validateLoginForm(this)">
+				<div style="font-size:25px; font-family: 'Noto Sans Japanese', sans-serif;">ID・パスワードを入力してください。
+				</div>
 
-					<html:text property="employeeId" size="16" value="" />
+				<html:form action="/login" onsubmit="return validateLoginForm(this)">
+					
+					<div style="">ログインID</div>
+					<html:text property="employeeId" size="25" value="" style="height: 25px;" />
+
 					<br />
-					<html:password property="password" size="16" redisplay="false"
-						value="" />
+					<br>
+					<div style="">パスワード</div>
+					<html:password property="password" size="25" redisplay="false"
+						value=""  style="height: 25px;"/>
 					<br />
 					<br />
-					<html:submit property="submit" value="ログイン" />
-					<html:reset value="リセット" />
+					<br>
+					
+					<div class="buttons">
+  						<html:submit property="submit" value="ログイン" styleClass="submit-button" />
+  						<html:reset value="リセット" styleClass="reset-button" />
+					</div>
+
 				</html:form>
 			</div>
 		</div>
