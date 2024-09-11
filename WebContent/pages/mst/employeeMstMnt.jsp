@@ -169,13 +169,13 @@
               </tr>
             </table>
           </div>
-          <div style="overflow: auto; height:440px; width:1030px;  margin: 0 auto; ">
+          <div style="overflow: auto; height:500px; width:1030px;  margin: 0 auto; ">
             <table class="tableBody" >
               <logic:iterate indexId="idx" id="employeeMstMntBeanList" name="employeeMstMntForm"  property="employeeMstMntBeanList">
                 <bean:define id="employeeId" name= "employeeMstMntBeanList" property="employeeId" type="java.lang.String"/>
                 <bean:define id="selectAuthorityId" name= "employeeMstMntBeanList" property="authorityId" type="java.lang.String"/>
                <tr> 
-                  <td width="200px"  align="center">
+                  <td width="200px" height="50px" align="center">
                     <bean:write property="employeeId" name="employeeMstMntBeanList"/>
                     <html:hidden property="employeeId" name="employeeMstMntBeanList" indexed="true"/>
                   </td>
