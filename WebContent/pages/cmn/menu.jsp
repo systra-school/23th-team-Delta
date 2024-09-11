@@ -68,7 +68,7 @@
         <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                      property="authorityId"
                      value="<%=CommonConstant.Authority.ADMIN.getId() %>">
-         <div  style="margin-top:8%;"> 
+         <div  style="margin-top:60px;"> 
         <div class="flex-container">
          <div class="flex">
           <div class="menuBlock" title="新規入力">
@@ -116,7 +116,7 @@
                      property="authorityId"
                      value="<%=CommonConstant.Authority.USER.getId() %>">
           
-          <div  style="margin-top:8%;">
+          <div  style="margin-top:60px;">
           <div class="flex-container">
           <div class="flex">
           <div class="menuBlock" title="新規入力">
