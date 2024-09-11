@@ -166,15 +166,16 @@
                       </html:select>
                     </td>
                     <td width="50px" align="center">
-                      <html:select property="shiftIdOnSaturday" name="baseShiftMstMntBeanList" indexed="true" disabled="true" >
-                      <html:optionsCollection name="baseShiftMstMntForm" property="shiftCmbMap" value="key" label="value"/>
-                      </html:select>
-                    </td>
-                    <td width="50px" align="center">
                       <html:select property="shiftIdOnSunday" name="baseShiftMstMntBeanList" indexed="true" disabled="true"  >
                       <html:optionsCollection name="baseShiftMstMntForm" property="shiftCmbMap" value="key" label="value"  />
                       </html:select>
                     </td>
+                    <td width="50px" align="center">
+                      <html:select property="shiftIdOnSaturday" name="baseShiftMstMntBeanList" indexed="true" disabled="true" >
+                      <html:optionsCollection name="baseShiftMstMntForm" property="shiftCmbMap" value="key" label="value"/>
+                      </html:select>
+                    </td>
+                    
                   </tr>
                 </logic:iterate>
               </table>
