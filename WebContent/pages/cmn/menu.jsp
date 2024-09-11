@@ -19,13 +19,20 @@
     <title>メニュー画面</title>
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=DotGothic16&family=Hachi+Maru+Pop&family=Klee+One:wght@400;600&family=Murecho:wght@100..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  	
   	<style>
-      .flex{
-      	display: flex;
-      }
+  	.flex-container {
+    display: flex;
+    justify-content: center; /* 中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    width: 100%;
+	}
+    .flex {
+     display: flex;
+     flex-wrap:wrap;
+     justify-content: center;
+    }
     
-      
-      
     </style>
   </head>
   <body>
@@ -61,7 +68,8 @@
         <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                      property="authorityId"
                      value="<%=CommonConstant.Authority.ADMIN.getId() %>">
-         <div  style="margin-left:20%; margin-top:8%;">
+         <div  style="margin-top:8%;"> 
+        <div class="flex-container">
          <div class="flex">
           <div class="menuBlock" title="新規入力">
             <html:form action="/workRecordInputInit">
@@ -101,43 +109,43 @@
           </div>
          </div>
          </div>
+         </div>
         </logic:equal>
 
         <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                      property="authorityId"
                      value="<%=CommonConstant.Authority.USER.getId() %>">
           
-          <div  style="margin-left:15%;">
-          <div class="menuBlock">
+          <div  style="margin-top:8%;">
+          <div class="flex-container">
+          <div class="flex">
+          <div class="menuBlock" title="新規入力">
+          	<html:form action="/workRecordInputInit">
+              <input type="submit" value="勤務実績入力" class="bigButton" />
+            </html:form>
+            <html:form action="/workDateRequestInputInit">
+              <input type="submit" value="出勤希望日入力" class="bigButton" />
+            </html:form>
+            
+            
+          </div>
+          
+          <div class="menuBlock" title="勤怠管理">
+          	<html:form action="/baseShiftCheckInit">
+              <input type="submit" value="基本シフト確認" class="bigButton" />
+            </html:form>
             <html:form action="/monthlyShiftCheckInit">
               <input type="submit" value="月別シフト確認" class="bigButton" />
             </html:form>
             <html:form action="/dailyShiftInit">
               <input type="submit" value="日別シフト確認" class="bigButton" />
             </html:form>
-          </div>
-          
-          <div class="menuBlock">
-            <html:form action="/workRecordInputInit">
-              <input type="submit" value="勤務実績入力" class="bigButton" />
-            </html:form>
-          </div>
-		  
-		  <%--〇 --%>
-          <div class="menuBlock">
-            <html:form action="/workDateRequestInputInit">
-              <input type="submit" value="出勤希望日入力" class="bigButton" />
-            </html:form>
-          </div>
-
-          <div class="menuBlock">
-            <html:form action="/baseShiftCheckInit">
-              <input type="submit" value="基本シフト確認" class="bigButton" />
-            </html:form>
-          </div>
+           </div>
           
           </div>
-           </logic:equal>
+          </div>
+          </div>          
+         </logic:equal>
         </div>          
        
       </div>

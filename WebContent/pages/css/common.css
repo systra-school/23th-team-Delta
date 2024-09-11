@@ -2,7 +2,7 @@
 * body定義
 */
 body {
-    background-color: FEFCF3;
+    background-color: #FEFCF3;
     overflow: hidden;
     width:100%;
     font-family: "BIZ UDPGothic", sans-serif;
@@ -31,7 +31,7 @@ errorbody {
 * ヘッダー定義
 */
 #header {
-	background-color:7BD3EA;
+	background-color:#7BD3EA;
     top: 2px;
     height: 60px;
     
@@ -55,16 +55,17 @@ errorbody {
 * メニュー画面のボタン
 */
 .menuBlock {
-    margin-left:60px;
+    /*margin-left:60px;*/
     float:left;
     text-align:center;
 	  position: relative;            /* タイトル用に親要素定義  */
 	  box-sizing: border-box;          /* 罫線・余白も含む大きさ  */
-	  margin: 14px auto 0 auto;    /* BOXの位置               */
-	  max-width: 500px;               /* BOXの最大横幅           */
-	  background: #fff;                /* BOXの背景色             */
+	  margin: 14px;    /* BOXの位置               */
+	  max-width: 500px;/* BOXの最大横幅           */
+	  background:rgba(255,255,255,0.5);                /* BOXの背景色             */
 	  padding: 33px 10px 25px 10px; /* BOX内の余白             */
 	  border: 3px solid #0059b3;   /* BOXの枠線               */
+	  border-radius: 16px;
     
       
 }
@@ -169,6 +170,21 @@ errorbody {
 .smallButton {
     width: 100px;
     height: 30px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #778899;
+    border-radius: 5px;
+ 	line-height: 30px;
+  	color: #fff;
+  	background-color: #EA927B;
+  	box-shadow: 0px 3px 2px #1567C3;
+  	transition: .3s;
+}
+
+.smallButton:hover {
+  box-shadow: unset;
+  transform: translateY(4px);
 }
 
 /*
@@ -177,6 +193,8 @@ errorbody {
 .bigButton {
     width: 200px;
     height: 50px;
+    border: 2px solid #778899;
+    border-radius: 16px;
 }
 
 /*
