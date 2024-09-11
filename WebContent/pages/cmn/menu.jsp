@@ -23,6 +23,9 @@
       .flex{
       	display: flex;
       }
+    
+      
+      
     </style>
   </head>
   <body>
@@ -58,9 +61,9 @@
         <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                      property="authorityId"
                      value="<%=CommonConstant.Authority.ADMIN.getId() %>">
-         <div  style="margin-left:15%;">
+         <div  style="margin-left:20%; margin-top:8%;">
          <div class="flex">
-          <div class="menuBlock">
+          <div class="menuBlock" title="新規入力">
             <html:form action="/workRecordInputInit">
               <input type="submit" value="勤務実績入力" class="bigButton" />
             </html:form>
@@ -72,7 +75,7 @@
             </html:form>
           </div>
 
-          <div class="menuBlock">
+          <div class="menuBlock" title="勤怠確認">
             <html:form action="/workRecordCheckInit">
               <input type="submit" value="勤務実績確認" class="bigButton" />
             </html:form>
@@ -88,7 +91,7 @@
             </html:form>
           </div>
 
-          <div class="menuBlock">
+          <div class="menuBlock" title="マスタメンテナンス">
             <html:form action="/employeeMstMnt">
               <input type="submit" value="社員マスタメンテナンス" class="bigButton" />
             </html:form>
