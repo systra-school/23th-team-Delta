@@ -219,7 +219,7 @@ errorbody {
 * テーブルヘッダーのスタイル
 */
 .tableHeader {
-    background-color: #C4A3BF;
+    background-color: #e3e2db;
     font-weight: bold;
     border: 1px solid black;
     border-collapse: collapse;
@@ -235,7 +235,7 @@ errorbody {
 */
 .tableBody {
 	height:22px;
-    background-color: #E0FFFF;
+    background-color: #f9f9f9;
     border: 1px solid black;
     border-collapse: collapse;
 }
