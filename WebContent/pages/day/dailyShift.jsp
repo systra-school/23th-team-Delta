@@ -94,7 +94,7 @@
       </div>
       <br>
       <div id="businessBody" style="overflow: hidden;">
-        <div style="margin-left:22%;">
+        <div style="margin-left:15%;">
           <html:form>
             <div style="height: 20px; margin-left:405px;">
               表示年月：
