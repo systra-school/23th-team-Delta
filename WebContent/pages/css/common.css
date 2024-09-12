@@ -38,8 +38,7 @@ errorbody {
     width: 100%;
 	background-color:#7BD3EA;
     top: 2px;
-    height: 146px;
-    box-shadow: 0 4px 16px rgb(6 26 5 / 15%);
+    height: 60px;
     
 }
 #headLeft {
@@ -67,10 +66,11 @@ errorbody {
 	  position: relative;            /* タイトル用に親要素定義  */
 	  box-sizing: border-box;          /* 罫線・余白も含む大きさ  */
 	  margin: 30px;    /* BOXの位置*/
-	  max-width: 500px;/* BOXの最大横幅*/
+	  width: auto;/* BOXの最大横幅*/
+	  height: auto;
 	  background:rgba(255,255,255,0.5);                /* BOXの背景色             */
 	  padding: 35px 30px 25px 30px; /* BOX内の余白*/
-	  border: 3px solid #0059b3;   /* BOXの枠線               */
+	  border: 3px solid rgba(0,89,179,0.5);   /* BOXの枠線               */
 	  border-radius: 16px;
     
       
@@ -80,8 +80,8 @@ errorbody {
 	  display: inline-block;      /* インラインボックス定義  */
 	  box-sizing: border-box;        /* 罫線・余白も含む大きさ  */
 	  line-height: 1;                 /* 1行の高さを初期化       */
-	  background: #0059b3;           /* タイトル背景色          */
-	  color: #ffffff;           /* タイトルの文字色        */
+	  background: #7bbeea;           /* タイトル背景色          */
+	  color: #666666;           /* タイトルの文字色        */
 	  content: attr(title);       /* タイトルに[title]を表示 */
 	  font-weight: bold;              /* タイトルは太字          */
 	  padding: 8px 15px;          /* タイトル内の余白        */
@@ -174,8 +174,9 @@ errorbody {
 * ボタンサイズ通常
 */
 .smallButton {
-    width: 100px;
-    height: 30px;
+    width: 110px;
+    height: 45px;
+    font-size: 18px;
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -197,8 +198,8 @@ errorbody {
 * ボタンサイズ大
 */
 .bigButton {
-    width: 200px;
-    height: 50px;
+    width: 230px;
+    height: 80px;
     border: 2px solid #778899;
     border-radius: 16px;
     display: inline-block;
@@ -206,10 +207,11 @@ errorbody {
     text-decoration: none;
     border: 2px solid #778899;
  	line-height: 50px;
-  	color: #000;
+  	color: #666666;
   	background-color: #EA927B;
   	box-shadow: 0px 3px 2px #1567C3;
   	transition: .3s;
+  	font-size: 18px;
 }
 
 .bigButton:hover {
@@ -230,7 +232,7 @@ errorbody {
     text-decoration: none;
     border: 2px solid #778899;
  	line-height: 30px;
-  	color: #fff;
+  	color: #666666;
   	background-color: #EA927B;
   	box-shadow: 0px 3px 2px #1567C3;
   	transition: .3s;
