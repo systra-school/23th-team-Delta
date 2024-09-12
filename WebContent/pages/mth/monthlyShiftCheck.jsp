@@ -82,22 +82,21 @@ if (listSize > intShowLength) {
     
   </head>
   <body>
-    <div id="wrapper">
-      <div id="header">
-        <table class="full-width">
-          <tr>
-            <td id="headLeft">
+  <header id="header">
+        
+            <div id="headLeft">
               <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
-            </td>
-            <td id="headCenter">
+            </div>
+            <div id="headCenter">
               月別シフト確認
-            </td>
-            <td id="headRight">
+            </div>
+            <div id="headRight">
               <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
-            </td>
-          </tr>
-        </table>
-      </div>
+            </div>
+         
+      </header>
+    <div id="wrapper">
+      
       <div id="businessBody" style="overflow: hidden;">
         <html:form action="/workDateRequestCheckInit" >
           <div>
