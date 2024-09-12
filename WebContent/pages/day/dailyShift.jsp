@@ -70,6 +70,26 @@
     <title>日別シフト確認画面</title>
 
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #wrapper {
+      width: 100%;
+    }
+    #businessBody {
+      width: 100%;
+      display: flex;
+      justify-content: center; /* テーブルを中央に配置 */
+    }
+    .table-container {
+      width: auto; /* テーブルの幅に応じて調整 */
+    }
+  </style>
   </head>
   <body>
     <div id="wrapper">
@@ -94,7 +114,6 @@
       </div>
       <br>
       <div id="businessBody" style="overflow: hidden;">
-        <div style="margin-left:15%;">
           <html:form>
             <div style="height: 20px; margin-left:405px;">
               表示年月：
