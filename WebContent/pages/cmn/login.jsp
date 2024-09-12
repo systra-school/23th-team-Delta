@@ -81,6 +81,23 @@
   .modal-buttons button {
     font-size: 16px; 
   }
+  
+   .box { 
+   overflow: hidden; 
+   width: 150px; 
+   height: 240px; 
+   animation: pikopiko 1s steps(2, start) infinite; 
+ } 
+
+ @keyframes pikopiko { 
+   0% { 
+     transform: rotate(20deg); 
+   } 
+   to { 
+     transform: rotate(-10deg); 
+   } 
+ } 
+  
 </style>
 </head>
 <body>
@@ -123,7 +140,10 @@
         <html:reset value="リセット" styleClass="reset-button" />
     </div>
 </html:form>
-
+<img src="/kikin-for-Struts-bug/pages/img/ぜるだ.png" style="width: 100px;  height: 90px;" alt="ぜるだ画像">
+		<div class="box">
+ 		<img src="/kikin-for-Struts-bug/pages/img/img_6378.png" style="width: 150px;  height: 240px;" alt="ドット画像">
+ 		</div>
 
 
 		</div>
