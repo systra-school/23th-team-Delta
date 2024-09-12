@@ -39,12 +39,14 @@
   <div class="bird"></div>
 <div class="bird -type_2"></div>
 <div class="bird -type_3"></div>
-   <div id="header">
-        <table class="full-width">
-          <tr>
-            <td id="headLeft">
-            </td>
-            <td id="headCenter">
+
+	<header id="header">
+		<!--<div id="header_wrap">-->
+        <!--<div class="full-width">-->
+    
+            <div id="headLeft">
+            </div>
+            <div id="headCenter">
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="authorityId"
                          value="<%=CommonConstant.Authority.ADMIN.getId() %>">
@@ -56,13 +58,14 @@
                          value="<%=CommonConstant.Authority.USER.getId() %>">
                 メニュー(一般)
             </logic:equal>
-            </td>
-            <td id="headRight">
+            </div>
+            <div id="headRight">
               <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
-            </td>
-          </tr>
-        </table>
-      </div>
+            </div>
+          
+        <!--</div>--
+      <!--</div>-->
+	</header>
       
     <div id="wrapper">
      
