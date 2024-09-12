@@ -14,11 +14,15 @@
 <html:javascript formName="loginForm" />
 <title>ログイン画面</title>
 <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=DotGothic16&family=Hachi+Maru+Pop&family=Klee+One:wght@400;600&family=Murecho:wght@100..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="icon" href="/kikin-for-Struts-bug/pages/img/icon.jpg" type="image/x-icon">
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@700&display=swap');
   
+  #wrapper{
+   margin-top:65px;
+  }
   
   .modal {
     display: none;
@@ -129,10 +133,10 @@
 			</div>
 
 			<html:form action="/login" onsubmit="return validateLoginForm(this)" styleId="loginForm">
-    <html:text property="employeeId" size="25" value="" styleId="employeeId" style="height: 25px;" />
+    <html:text property="employeeId" size="25" value="" styleId="employeeId" style="height: 30px;" />
     <br />
     <br>
-    <html:password property="password" size="25" redisplay="false" styleId="password" style="height: 25px;" />
+    <html:password property="password" size="25" redisplay="false" styleId="password" style="height: 30px;" />
     <br />
     <br />
     <div class="buttons">
