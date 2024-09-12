@@ -66,7 +66,7 @@ errorbody {
 	  position: relative;            /* タイトル用に親要素定義  */
 	  box-sizing: border-box;          /* 罫線・余白も含む大きさ  */
 	  margin: 30px;    /* BOXの位置*/
-	  width: auto;/* BOXの最大横幅*/
+	  width: 400px;/* BOXの最大横幅*/
 	  height: auto;
 	  background:rgba(255,255,255,0.5);                /* BOXの背景色             */
 	  padding: 35px 30px 25px 30px; /* BOX内の余白*/
