@@ -154,22 +154,20 @@
 </style>
   </head>
   <body>
+  <header id="header">
+  <div id="headLeft">
+     <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
+    </div>
+    <div id="headCenter">
+       勤務実績入力
+    </div>
+    <div id="headRight">
+      <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
+    </div>
+   </header>
+  
     <div id="wrapper">
-      <div id="header">
-        <table class="full-width">
-          <tr>
-            <td id="headLeft">
-              <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
-            </td>
-            <td id="headCenter">
-              勤務実績入力
-            </td>
-            <td id="headRight">
-                <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
-              </td>
-          </tr>
-        </table>
-      </div>
+      
       <div id="businessBody">
         <html:form action="/employeeMstMntRegister" >
           <div style="width: 100%;">
