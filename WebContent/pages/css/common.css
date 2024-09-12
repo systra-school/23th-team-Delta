@@ -39,6 +39,7 @@ errorbody {
 	background-color:#7BD3EA;
     top: 2px;
     height: 146px;
+    box-shadow: 0 4px 16px rgb(6 26 5 / 15%);
     
 }
 #headLeft {
