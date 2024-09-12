@@ -187,7 +187,7 @@
               </tr>
             </table>
           </div>
-          <div style="overflow: auto; height: 80%; width: 600px; margin: 0 auto;">
+          <div style="overflow: auto; height: auto; width: 600px; margin: 0 auto;">
             <table class="tableBody">
               <logic:iterate indexId="idx" id="shiftMstMntBeanList" name="shiftMstMntForm"  property="shiftMstMntBeanList">
               <bean:define id="shiftId" name= "shiftMstMntBeanList" property="shiftId" type="java.lang.String"/>
