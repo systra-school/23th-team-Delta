@@ -61,39 +61,39 @@
       <div id="businessBody">
         <html:form action="/baseShiftRegister" >
           <%-- 凡例 --%>
-          <div id="pattern" style="width:476px; margin-left:20%; float:left">
+          <div id="pattern" style="width:600px; margin-left:10%; float:left">
             <div>
               <table class="tableHeader">
-                <tr>
+               <tr style="height: 35px;">
                   <td width="100px" align="center">
                     シフト名
                   </td>
-                  <td width="150px" align="center">
+                  <td width="100px" align="center">
                     シンボル
                   </td>
-                  <td width="150px" align="center">
+                  <td width="200px" align="center">
                     時間
                   </td>
-                  <td width="50px" align="center">
+                  <td width="100px" align="center">
                     休憩
                   </td>
                 </tr>
               </table>
             </div>
-            <div style="height:450px;overflow:auto">
+            <div style="height:200px;overflow:auto">
               <table class="tableBody">
                 <logic:iterate id="baseShiftPatternBeanList" name="baseShiftMstMntForm"  property="baseShiftPatternBeanList" indexId="idx">
-                  <tr>
+               		<tr style="height: 35px;">
                     <td width="100px" align="center">
                       <bean:write property="shiftName" name="baseShiftPatternBeanList"/>
                     </td>
-                    <td width="150px" align="center">
+                    <td width="100px" align="center">
                       <bean:write property="symbol" name="baseShiftPatternBeanList"/>
                     </td>
-                    <td width="150px" align="center">
+                    <td width="200px" align="center">
                       <bean:write property="timeZone" name="baseShiftPatternBeanList" filter="false"/>
                     </td>
-                    <td width="50px" align="center">
+                    <td width="100px" align="center">
                       <bean:write property="breakTime" name="baseShiftPatternBeanList"/>
                     </td>
                   </tr>
@@ -101,11 +101,11 @@
               </table>
             </div>
           </div>
-          <div id="data" style="width:614px; margin-left:20px; float:left">
+          <div id="data" style="width:600px; margin-right:10%; float:right">
             <div>
               <table class="tableHeader">
                 <tr>
-                   <td width="250px" align="center">
+                   <td width="200px" align="center">
                     社員名
                   </td>
                   <td width="50px" align="center">
@@ -132,12 +132,12 @@
                 </tr>
               </table>
             </div>
-            <div style="height:450px;overflow:auto">
+            <div style="height:500px;overflow:auto">
               <table class="tableBody">
                 <logic:iterate id="baseShiftMstMntBeanList" name="baseShiftMstMntForm" property="baseShiftMstMntBeanList" indexId="idx" >
-                  <tr>
+                    <tr style="height: 20px;">
                     <html:hidden name="baseShiftMstMntBeanList" property="employeeId" />
-                    <td width="250px" align="center">
+                    <td width="200px" align="center">
                       <bean:write property="employeeName" name="baseShiftMstMntBeanList"/>
                     </td>
                     <td width="50px" align="center">
