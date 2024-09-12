@@ -46,7 +46,7 @@ errorbody {
     text-align:center;
 }
 #headCenter {
-    font-size: 45px;
+    font-size: 30px;
     color: white;
     width:70%;
     text-align:center;
@@ -88,7 +88,7 @@ errorbody {
 	  top: -17px;             /* タイトル上位置はマイナス*/
 	  left: 16px;              /* タイトル右位置は1文字分 */
 	  border-radius: 16px;              /* タイトルの角丸          */
-	  font-size: 16px;              /* タイトルの文字サイズ    */
+	  font-size: 20px;              /* タイトルの文字サイズ    */
 	}
 
 /*
