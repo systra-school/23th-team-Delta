@@ -97,7 +97,7 @@ if (listSize > intShowLength) {
 				.open(
 						"/kikin-for-Struts-bug/shiftPattern.do?param=",
 						"windowBPopup",
-						"menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
+						"menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=622px");
 	}
 </script>
 <title>月別シフト入力画面</title>
@@ -105,7 +105,7 @@ if (listSize > intShowLength) {
 <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet"
 	type="text/css" />
 <link
-	href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=DotGothic16&family=Hachi+Maru+Pop&family=Klee+One:wght@400;600&family=Murecho:wght@100..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"
+	href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=DotGothic16&family=Hachi+Maru+Pop&family=Klee+One:wght@400;600&family=Murecho:wght@100..900&family=Zen+Maru+Gothic:wght@220;400;220;700;900&display=swap"
 	rel="stylesheet">
 
 
@@ -149,13 +149,13 @@ if (listSize > intShowLength) {
 										</html:select></td>
 								</tr>
 								<tr>
-									<td width="150px" valign="top" >
+									<td width="122px" valign="top">
 										<table class="tableHeader">
 											<tr height="<%=heightSize%>px">
-												<td width="150px" align="center">&nbsp;</td>
+												<td width="122px" align="center">&nbsp;</td>
 											</tr>
 											<tr height="<%=heightSize%>px">
-												<td width="150px" align="center" style="font-size: 24px;">
+												<td width="122px" align="center" style="font-size: 24px;">
 													社員名</td>
 											</tr>
 											<logic:iterate offset="offset" length="<%=showLength%>"
@@ -163,7 +163,7 @@ if (listSize > intShowLength) {
 												property="monthlyShiftInputBeanList">
 
 												<tr height="<%=heightSize%>px">
-													<td class="tableBody" width="150px" align="center"
+													<td class="tableBody" width="122px" align="center"
 														style="font-size: 24px;"><bean:write
 															property="employeeName" name="monthlyShiftInputBeanList" /><br>
 													</td>
@@ -174,14 +174,13 @@ if (listSize > intShowLength) {
 									</td>
 									<td valign="top">
 										<div
-											style="overflow-y: auto; overflow-x: auto; width: auto; height: auto;; text-align: center;">
+											style="overflow-y: auto; overflow-x: hidden; width: auto; height: auto; text-align: center;">
 											<table class="tableHeader">
 												<tr height="<%=heightSize%>px">
 													<%
 													for (int i = 1; i <= dateBeanListSize; i++) {
 													%>
-													<td width="50px" align="center" valign="middle"
-														style="font-size: 20px;"><%=i%></td>
+													<td width="22px" align="center" valign="middle"><%=i%></td>
 													<%
 													}
 													%>
@@ -205,8 +204,7 @@ if (listSize > intShowLength) {
 														}
 														%>
 
-														<td width="50px" align="center" class="<%=color%>"
-															style="font-size: 20px;"><bean:write
+														<td width="22px" align="center" class="<%=color%>"><bean:write
 																property="weekDay" name="dateBeanList" /><br></td>
 													</logic:iterate>
 												</tr>
@@ -218,202 +216,174 @@ if (listSize > intShowLength) {
 														property="registerFlg" value="true" indexed="true" />
 
 													<tr height="<%=heightSize%>px">
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId01" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId01"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId02" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId02"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId03" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId03"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId04" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId04"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId05" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId05"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId06" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId06"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId07" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId07"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId08" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId08"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId09" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId09"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId10" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId10"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId11" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId11"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId12" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId12"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId13" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId13"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId14" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId14"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId15" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId15"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId16" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId16"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId17" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId17"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId18" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId18"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId19" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId19"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId20" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId20"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId21" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId21"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId22" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId22"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId23" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId23"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId24" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId24"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId25" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId25"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId26" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId26"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId27" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId27"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
 														<%
 														if (dateBeanListSize >= 28) {
 														%>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId28" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId28"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
@@ -423,10 +393,9 @@ if (listSize > intShowLength) {
 														<%
 														if (dateBeanListSize >= 29) {
 														%>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId29" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId29"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
@@ -434,12 +403,11 @@ if (listSize > intShowLength) {
 														}
 														%>
 														<%
-														if (dateBeanListSize >= 30) {
+														if (dateBeanListSize >= 22) {
 														%>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId30" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId22"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
@@ -450,10 +418,9 @@ if (listSize > intShowLength) {
 														<%
 														if (dateBeanListSize >= 31) {
 														%>
-														<td class="tableBody" width="50px" align="center"
-															valign="middle" style="font-size: 20px;"><html:select
-																property="shiftId31" name="monthlyShiftInputBeanList"
-																indexed="true">
+														<td class="tableBody" width="22px" align="center"
+															valign="middle"><html:select property="shiftId31"
+																name="monthlyShiftInputBeanList" indexed="true">
 																<html:optionsCollection name="monthlyShiftInputForm"
 																	property="shiftCmbMap" value="key" label="value" />
 															</html:select></td>
@@ -483,7 +450,8 @@ if (listSize > intShowLength) {
 				</div>
 
 			</html:form>
-		</div>
+		
+
 		<div style="text-align: right;">
 			<html:link
 				href="/kikin-for-Struts-bug/monthlyShiftInputPage.do?paging=back">前へ</html:link>
@@ -497,7 +465,7 @@ if (listSize > intShowLength) {
 			<table>
 				<tr>
 					<td id="footLeft">
-						<div style="margin-left: 50px; white-space: nowrap;">
+						<div style="margin-left: 22px; white-space: nowrap;">
 							<input value="凡例表示" type="button" class="longButton"
 								onclick="openWindow()" /> <input value="基本シフト反映" type="button"
 								class="longButton" onclick="submitImportKihon()" /> <input
@@ -511,6 +479,8 @@ if (listSize > intShowLength) {
 				</tr>
 			</table>
 		</div>
+
+	</div>
 	</div>
 </body>
 </html>
