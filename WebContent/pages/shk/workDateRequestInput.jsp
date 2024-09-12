@@ -182,17 +182,15 @@
         <table>
           <tr>
             <td id="footLeft">
-              <div style="margin-left:50px; margin-top: 150px;">
-            <input value="凡例表示" type="button" class="longButton"  onclick="openWindow()" />        
-         </div>
+            	<input value="凡例表示" type="button" class="longButton"  onclick="openWindow()" />
+            	<input value="出勤希望日参照" type="button" class="longButton"  onclick="openSearch()" />
             </td>
             <td id="footCenter">
               　
             </td>
             <td id="footRight">
             	 <div style="margin-right:30px; margin-top: 150px;">
-    	        <input value="出勤希望日参照" type="button" class="longButton"  onclick="openSearch()" />
-            	<input value="登録" type="button" class="smallButton"  onclick="submitRegister()" />
+            	<input value="登録" type="button" class="longButton"  onclick="submitRegister()" />
 				</div>
             </td>
           </tr>

@@ -121,6 +121,7 @@ errorbody {
     float:right;
     width:400px;
     text-align:right;
+    display: flex;
 }
 /*
 * エラーページ ヘッダー、フッター共通定義
