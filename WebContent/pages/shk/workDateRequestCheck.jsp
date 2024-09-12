@@ -64,19 +64,18 @@
 	
 </head>
 <body>
-	<div id="wrapper">
-		<div id="header">
-			<table class="centered-container">
-				<tr>
-					<td id="headLeft"><input value="戻る" type="button"
+<header id="header">
+			
+					<div id="headLeft"><input value="戻る" type="button"
 						class="smallButton"
-						onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" /></td>
-					<td id="headCenter">出勤希望確認</td>
-					<td id="headRight"><input value="ログアウト" type="button"
-						class="smallButton" onclick="logout()" /></td>
-				</tr>
-			</table>
-		</div>
+						onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" /></div>
+					<div id="headCenter">出勤希望確認</div>
+					<div id="headRight"><input value="ログアウト" type="button"
+						class="smallButton" onclick="logout()" /></div>
+			
+		</header>
+	<div id="wrapper">
+		
 		<div id="businessBody" style="overflow: hidden; height: auto;">
 			<html:form action="/workDateRequestCheckInit">
 				<div id="resize">
