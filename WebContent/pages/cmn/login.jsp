@@ -48,7 +48,7 @@
 }
 
 .modal-content p {
-  font-size: 18px;
+  font-size: 35px;
   color: #333;
 }
 
@@ -150,7 +150,7 @@
     <div class="modal-buttons">
       <button id="confirmLogin" onclick="submitForm()">「ログインする」と心の中で思ったならッ！　その時スデに行動は終わっているんだッ！
 </button>
-      <button id="cancelLogin">やめとく</button>
+      <button id="cancelLogin">逃げるんだよォォォーーーーーッ</button>
     </div>
   </div>
 </div>
