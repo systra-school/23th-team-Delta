@@ -108,6 +108,17 @@ if (listSize > intShowLength) {
 	href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=DotGothic16&family=Hachi+Maru+Pop&family=Klee+One:wght@400;600&family=Murecho:wght@100..900&family=Zen+Maru+Gothic:wght@220;400;220;700;900&display=swap"
 	rel="stylesheet">
 
+<style type="text/css">
+
+body {
+    
+    overflow-y: auto;
+   
+    
+}
+
+</style>
+
 
 </head>
 <body>
@@ -125,7 +136,7 @@ if (listSize > intShowLength) {
 				</tr>
 			</table>
 		</div>
-		<div id="businessBody" style="overflow: auto;">
+		<div id="businessBody" style="overflow: hidden;">
 			<html:form action="/monthlyShiftInputInit">
 				<div>
 					<div id="resize">
@@ -448,7 +459,7 @@ if (listSize > intShowLength) {
 						</div>
 					</div>
 				</div>
-
+				
 			</html:form>
 		
 
