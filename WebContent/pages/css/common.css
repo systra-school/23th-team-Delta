@@ -111,6 +111,7 @@ errorbody {
     float:left;
     width:400px;
     text-align:left;
+    display: flex;
 }
 #footCenter {
     width:100%;
