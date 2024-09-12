@@ -14,8 +14,7 @@
 <html:javascript formName="loginForm" />
 <title>ログイン画面</title>
 <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
-  	<link rel="icon" href="/kikin-for-Struts-bug/pages/img/icon.jpg" type="image/x-icon">
-
+<link rel="icon" href="/kikin-for-Struts-bug/pages/img/icon.jpg" type="image/x-icon">
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@700&display=swap');
@@ -131,14 +130,17 @@
 	</div>
 
 	<div id="footer">
-		<table>
-			<tr>
-				<td id="footLeft"></td>
-				<td id="footCenter"></td>
-				<td id="footRight"></td>
-			</tr>
-		</table>
-	</div>
+  <table>
+    <tr>
+      <td id="footLeft"></td>
+      <td id="footCenter">
+        &copy; 2024 風と愉快な仲間たち Co.,Ltd. All rights reserved.
+      </td>
+      <td id="footRight"></td>
+    </tr>
+  </table>
+</div>
+
 </div>
 
 <!-- モーダルのHTML -->
