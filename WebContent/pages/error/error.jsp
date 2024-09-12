@@ -10,6 +10,8 @@
 <script type="text/javascript" src="/kikin-for-Struts-bug/pages/js/common.js"></script>
 <title>エラー</title>
 <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="/kikin-for-Struts-bug/pages/img/icon.jpg" type="image/x-icon">
+
 </head>
 <body>
 <div id="errorHeader">

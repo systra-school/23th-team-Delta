@@ -40,6 +40,8 @@
     基本シフト確認
     </title>
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/kikin-for-Struts-bug/pages/img/icon.jpg" type="image/x-icon">
+    
   </head>
   <body>
     <div id="wrapper">

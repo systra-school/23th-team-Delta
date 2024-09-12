@@ -19,6 +19,7 @@
     <title>メニュー画面</title>
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=DotGothic16&family=Hachi+Maru+Pop&family=Klee+One:wght@400;600&family=Murecho:wght@100..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  	<link rel="icon" href="/kikin-for-Struts-bug/pages/img/icon.jpg" type="image/x-icon">
   	
   	<style>
   	.flex-container {
@@ -39,14 +40,12 @@
   <div class="bird"></div>
 <div class="bird -type_2"></div>
 <div class="bird -type_3"></div>
-
-	<header id="header">
-		<!--<div id="header_wrap">-->
-        <!--<div class="full-width">-->
-    
-            <div id="headLeft">
-            </div>
-            <div id="headCenter">
+   <div id="header">
+        <table class="full-width">
+          <tr>
+            <td id="headLeft">
+            </td>
+            <td id="headCenter">
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
                          property="authorityId"
                          value="<%=CommonConstant.Authority.ADMIN.getId() %>">
@@ -58,14 +57,13 @@
                          value="<%=CommonConstant.Authority.USER.getId() %>">
                 メニュー(一般)
             </logic:equal>
-            </div>
-            <div id="headRight">
+            </td>
+            <td id="headRight">
               <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
-            </div>
-          
-        <!--</div>--
-      <!--</div>-->
-	</header>
+            </td>
+          </tr>
+        </table>
+      </div>
       
     <div id="wrapper">
      

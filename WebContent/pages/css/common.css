@@ -32,19 +32,11 @@ errorbody {
 * ヘッダー定義
 */
 #header {
-	display: flex;
-    justify-content: center; /* 中央揃え */
-    align-items: center; /* 垂直方向の中央揃え */
-    width: 100%;
 	background-color:#7BD3EA;
     top: 2px;
-    height: 146px;
+    height: 60px;
     
 }
-#header_wrap{
-	margin: 0 auto;
-}
-
 #headLeft {
     width:15%;
     text-align:center;
@@ -106,7 +98,6 @@ errorbody {
 * フッター定義
 */
 #footer {
-	
     bottom: 1%;
     height: 70px;
     width: 100%;
@@ -205,6 +196,20 @@ errorbody {
     height: 50px;
     border: 2px solid #778899;
     border-radius: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #778899;
+ 	line-height: 50px;
+  	color: #000;
+  	background-color: #EA927B;
+  	box-shadow: 0px 3px 2px #1567C3;
+  	transition: .3s;
+}
+
+.bigButton:hover {
+  box-shadow: unset;
+  transform: translateY(4px);
 }
 
 /*
@@ -213,6 +218,22 @@ errorbody {
 .longButton {
     width: 200px;
     height: 30px;
+    border: 2px solid #778899;
+    border-radius: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #778899;
+ 	line-height: 30px;
+  	color: #fff;
+  	background-color: #EA927B;
+  	box-shadow: 0px 3px 2px #1567C3;
+  	transition: .3s;
+}
+
+.longButton:hover {
+  box-shadow: unset;
+  transform: translateY(4px);
 }
 
 
@@ -484,67 +505,4 @@ body {
   overflow: hidden;
   height: 100vh;
   margin: 0;
-}
-
-.newtons-cradle {
-  --uib-size: 40px;
-  --uib-speed: 1.4s;
-  --uib-color: black;
- 
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: var(--uib-size);
-  height: var(--uib-size);
-}
-.newtons-cradle__dot {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 25%;
-  transform-origin: center top;
-}
-.newtons-cradle__dot::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 25%;
-  border-radius: 50%;
-  background-color: var(--uib-color);
-}
-.newtons-cradle__dot:first-child {
-  animation: swing var(--uib-speed) linear infinite;
-}
-.newtons-cradle__dot:last-child {
-  animation: swing2 var(--uib-speed) linear infinite;
-}
-@keyframes swing {
-  0% {
-    transform: rotate(0deg);
-    animation-timing-function: ease-out;
-  }
-  25% {
-    transform: rotate(70deg);
-    animation-timing-function: ease-in;
-  }
-  50% {
-    transform: rotate(0deg);
-    animation-timing-function: linear;
-  }
-}
-@keyframes swing2 {
-  0% {
-    transform: rotate(0deg);
-    animation-timing-function: linear;
-  }
-  50% {
-    transform: rotate(0deg);
-    animation-timing-function: ease-out;
-  }
-  75% {
-    transform: rotate(-70deg);
-    animation-timing-function: ease-in;
-  }
 }

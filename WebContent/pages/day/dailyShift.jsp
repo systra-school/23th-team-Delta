@@ -50,6 +50,7 @@
     <script type="text/javascript" src="/kikin-for-Struts-bug/pages/js/checkCommon.js"></script>
     <script type="text/javascript" src="/kikin-for-Struts-bug/pages/js/message.js"></script>
     <script type="text/javascript">
+    
 
     /**
      * 検索
@@ -70,6 +71,8 @@
     <title>日別シフト確認画面</title>
 
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/kikin-for-Struts-bug/pages/img/icon.jpg" type="image/x-icon">
+    
     <style>
     body {
       margin: 0;
@@ -89,6 +92,7 @@
     .table-container {
       width: auto; /* テーブルの幅に応じて調整 */
     }
+   
   </style>
   </head>
   <body>
