@@ -87,7 +87,7 @@
         	</table>
       	</div>
       	<div id="businessBody" style="overflow: hidden;">
-        <div style="margin-left:20%;">
+        <div style="margin-left:5%;">
           <html:form action="/workDateRequestInputInit" >
             表示年月：
             <html:select name="workDateRequestInputForm" property="yearMonth" onchange="submitSearch()">
@@ -123,7 +123,7 @@
                     </table>
                   </td>
                   <td>
-                    <div style="overflow-x: auto;overflow-y: hidden; width:1067px;height: 100%; text-align:center;">
+                    <div style="overflow-x: auto;overflow-y: hidden; width:1300px;height: 100%; text-align:center;">
                       <table class="tableBody">
                         <tr class="tableHeader">
  						  <% for(int i = 1;i <= dateBeanListSize;i++ ) { %>
@@ -176,23 +176,24 @@
               </table>
             </div>
 		 </html:form>
-		 <div style="margin-left:50px;">
-            <input value="凡例表示" type="button" class="longButton"  onclick="openWindow()" />        
-         </div>
         </div>
        </div>
 	<div id="footer">
         <table>
           <tr>
             <td id="footLeft">
-              　
+              <div style="margin-left:50px; margin-top: 150px;">
+            <input value="凡例表示" type="button" class="longButton"  onclick="openWindow()" />        
+         </div>
             </td>
             <td id="footCenter">
               　
             </td>
             <td id="footRight">
+            	 <div style="margin-right:30px; margin-top: 150px;">
     	        <input value="出勤希望日参照" type="button" class="longButton"  onclick="openSearch()" />
             	<input value="登録" type="button" class="smallButton"  onclick="submitRegister()" />
+				</div>
             </td>
           </tr>
         </table>
