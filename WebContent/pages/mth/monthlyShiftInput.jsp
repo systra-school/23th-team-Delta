@@ -123,20 +123,19 @@ body {
 
 </head>
 <body>
-	<div id="wrapper">
-		<div id="header">
-			<table class="centered-container">
-				<tr>
-					<td id="headLeft">
+<header id="header">
+			
+					<div id="headLeft">
 						<button type="submit" class="smallButton"
 							onclick="doSubmit('/kikin-for-Struts-bug/menu.do')">戻る</button>
-					</td>
-					<td id="headCenter">月別シフト入力</td>
-					<td id="headRight"><input value="ログアウト" type="button"
-						class="smallButton" onclick="logout()" /></td>
-				</tr>
-			</table>
-		</div>
+					</div>
+					<div id="headCenter">月別シフト入力</div>
+					<div id="headRight"><input value="ログアウト" type="button"
+						class="smallButton" onclick="logout()" /></div>
+				
+		</header>
+	<div id="wrapper">
+		
 		<div id="businessBody" style="overflow: hidden;">
 			<html:form action="/monthlyShiftInputInit">
 				<div>
