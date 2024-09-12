@@ -32,6 +32,10 @@ errorbody {
 * ヘッダー定義
 */
 #header {
+	display: flex;
+    justify-content: center; /* 中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    width: 100%;
 	background-color:#7BD3EA;
     top: 2px;
     height: 60px;
@@ -42,7 +46,7 @@ errorbody {
     text-align:center;
 }
 #headCenter {
-    font-size: 24px;
+    font-size: 45px;
     color: white;
     width:70%;
     text-align:center;
