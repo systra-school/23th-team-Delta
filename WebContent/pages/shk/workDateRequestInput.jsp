@@ -70,22 +70,22 @@
 </head>
 <body>
 	<%String user_id = (String)session.getAttribute("session_cmn_login_user_id");  %>
-	<div id = "wrapper">
-		<div id = "header">
-			<table class="full-width">
-          		<tr>
-            		<td id="headLeft">
+	
+	<header id = "header">
+			
+            		<div id="headLeft">
               			<input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
-            		</td>
-            		<td id="headCenter">
+            		</div>
+            		<div id="headCenter">
               			出勤希望入力
-            		</td>
-            		<td id="headRight">
+            		</div>
+            		<div id="headRight">
               			<input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
-            		</td>
-          		</tr>
-        	</table>
-      	</div>
+            		</div>
+          		
+      	</header>
+	<div id = "wrapper">
+		
       	<div id="businessBody" style="overflow: hidden;">
         <div style="margin-left:5%;">
           <html:form action="/workDateRequestInputInit" >
