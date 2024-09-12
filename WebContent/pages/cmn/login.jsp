@@ -16,6 +16,7 @@
 <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=DotGothic16&family=Hachi+Maru+Pop&family=Klee+One:wght@400;600&family=Murecho:wght@100..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="icon" href="/kikin-for-Struts-bug/pages/img/icon.jpg" type="image/x-icon">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@700&display=swap');
@@ -159,6 +160,14 @@
       <td id="footLeft"></td>
       <td id="footCenter">
         &copy; 2024 風と愉快な仲間たち Co.,Ltd. All rights reserved.
+        <p></p>
+        <ul class="sns_button">
+  			<li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-twitter"></i></a></li>
+  			<li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-facebook-square"></i></a></li>
+  			<li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-line"></i></a></li>
+  			<li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-get-pocket"></i></a></li>
+  			<li><a href="#" target="_blank" rel="nofollow"><i class="fas fa-rss-square"></i></a></li>
+		</ul>
       </td>
       <td id="footRight"></td>
     </tr>
