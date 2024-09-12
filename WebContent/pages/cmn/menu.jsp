@@ -36,7 +36,9 @@
     </style>
   </head>
   <body>
-  
+  <div class="bird"></div>
+<div class="bird -type_2"></div>
+<div class="bird -type_3"></div>
    <div id="header">
         <table class="full-width">
           <tr>
