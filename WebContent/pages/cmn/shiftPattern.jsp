@@ -34,20 +34,20 @@
     
   </head>
   <body>
-    <div id="wrapper">
-      <div id="header"style="width:490px;">
-        <table>
-          <tr>
-            <td id="headLeft">
-            </td>
-            <td id="headCenter">
+  	 <header id="header">
+        
+            <div id="headLeft">
+            </div>
+            <div id="headCenter">
               シフト凡例
-            </td>
-            <td id="headRight">
-            </td>
-          </tr>
-        </table>
-      </div>
+            </div>
+            <div id="headRight">
+            </div>
+         
+      </header>
+  
+    <div id="wrapper">
+     
       <div id="businessBody"style="width:490px;">
         <html:form>
           <%-- 凡例 --%>
