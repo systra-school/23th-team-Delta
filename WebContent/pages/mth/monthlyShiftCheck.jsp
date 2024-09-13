@@ -103,7 +103,7 @@ if (listSize > intShowLength) {
             <div id="resize" class="full-width" style="margin-left:9%;">
               
              
-            <table class="widthTable" >
+            <table class="widthTable" style="width: 1500px;">
             <tr>
             <td style="margin: 0 auto;">表示年月：</td>
 	             

@@ -327,7 +327,7 @@ errorbody {
 }
 
 .widthTable{
-	width: 1500px;
+	/*width: 1500px;*/
     border-collapse: collapse;
 }
 .widthTable td, .widthTable th {
