@@ -292,13 +292,13 @@ errorbody {
 .tableHeader {
     background-color: #e3e2db;
     font-weight: bold;
-    border: 1px solid black;
+    border: 1px solid #666666;
     border-collapse: collapse;
     
 }
 .tableHeader td, .tableHeader th {
         padding: 0;
-        border: 1px solid #333333;
+        border: 1px solid #666666;
 }
 
 /*
@@ -307,23 +307,23 @@ errorbody {
 .tableBody {
 	height:22px;
     background-color: #f9f9f9;
-    border: 1px solid #333333;
+    border: 1px solid #666666;
     border-collapse: collapse;
 }
 .tableBody td, .tableBody th {
         padding: 0;
-        border: 1px solid #333333;
+        border: 1px solid #666666;
 }
 .full-width {
         width: 100%;
 }
 .nomalTable{
-	border: 0px solid #333333;
+	border: 0px solid #666666;
     border-collapse: collapse;
 }
 .nomalTable td, .nomalTable th {
         padding: 0;
-        border: 0px solid #333333;
+        border: 0px solid #666666;
 }
 
 .widthTable{
