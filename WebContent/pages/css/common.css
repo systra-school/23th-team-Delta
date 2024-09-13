@@ -108,6 +108,7 @@ errorbody {
 * フッター定義
 */
 #footer {
+	display: flex;
    justify-content: center;
     align-items: center;
     top: 2px;
@@ -118,17 +119,17 @@ errorbody {
 }
 #footLeft {
     float:left;
-    width:400px;
+    width:15px;
     text-align:left;
-    display: flex;
+    
 }
 #footCenter {
-    width:100%;
+    width:70%;
     text-align:center;
 }
 #footRight {
     float:right;
-    width:400px;
+    width:15px;
     text-align:right;
 }
 

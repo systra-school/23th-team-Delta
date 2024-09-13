@@ -66,7 +66,7 @@
               <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
             </div>
           
-      </header>
+   </header>
   
     <div id="wrapper">
       
@@ -196,21 +196,22 @@
           </div>
         </html:form>
       </div>
-      <div id="footer" style="position: fixed; bottom: 0; width: 95%;">
-        <table>
-          <tr>
-            <td id="footLeft">
-              　
-            </td>
-            <td id="footCenter">
-              　
-            </td>
-            <td id="footRight">
-              <input value="登録"  type="button" class="smallButton"  onclick="register()" />
-            </td>
-          </tr>
-        </table>
-      </div>
+      
     </div>
+    
+    <footer id="footer">
+        
+            <div id="footLeft">
+              　
+            </div>
+            <div id="footCenter">
+              　
+            </div>
+            <div id="footRight">
+              <input value="登録"  type="button" class="smallButton"  onclick="register()" />
+            </div>
+         
+      </footer>
+    
   </body>
 </html>
