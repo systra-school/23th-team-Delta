@@ -51,39 +51,39 @@
       <div id="businessBody"style="width:490px;">
         <html:form>
           <%-- 凡例 --%>
-          <div id="pattern" style="width:470px; margin-left:15px; float:left">
+          <div id="pattern" style="width:470px; margin-left:20px; float:left">
             <div>
-              <table class="tableHeader">
+              <table class="tableHeader" style="width: 100%; border-collapse: collapse;">
                 <tr>
-                  <td width="100px" align="center">
+                  <td width="150px" align="center">
                     シフト名
                   </td>
-                  <td width="150px" align="center">
+                  <td width="100px" align="center">
                     シンボル
                   </td>
-                  <td width="150px" align="center">
+                  <td width="200px" align="center">
                     時間
                   </td>
-                  <td width="50px" align="center">
+                  <td width="100px" align="center">
                     休憩
                   </td>
                 </tr>
               </table>
             </div>
             <div style="height:450px;overflow:auto">
-              <table class="tableBody">
+              <table class="tableBody" style="width: 100%; border-collapse: collapse;">
                 <logic:iterate id="shiftPatternBeanList" name="shiftPatternForm"  property="shiftPatternBeanList" indexId="idx">
                   <tr>
-                    <td width="100px" align="center">
+                    <td width="150px" align="center">
                       <bean:write property="shiftName" name="shiftPatternBeanList"/>
                     </td>
-                    <td width="150px" align="center">
+                    <td width="100px" align="center">
                       <bean:write property="symbol" name="shiftPatternBeanList"/>
                     </td>
-                    <td width="150px" align="center">
+                    <td width="200px" align="center">
                       <bean:write property="timeZone" name="shiftPatternBeanList" filter="false"/>
                     </td>
-                    <td width="50px" align="center">
+                    <td width="100px" align="center">
                       <bean:write property="breakTime" name="shiftPatternBeanList"/>
                     </td>
                   </tr>
