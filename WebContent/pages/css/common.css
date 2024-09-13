@@ -32,13 +32,13 @@ errorbody {
 * ヘッダー定義
 */
 #header {
-	display: flex;
-    justify-content: center; /* 中央揃え */
-    align-items: center; /* 垂直方向の中央揃え */
-    width: 100%;
-	background-color:#7BD3EA;
+	justify-content: center;
+    align-items: center;
     top: 2px;
     height: 60px;
+    bottom: 1%;
+    height: 70px;
+    width: 100%;
     
 }
 #headLeft {
@@ -97,6 +97,11 @@ errorbody {
 #businessBody {
     height: auto;
     overflow: auto;
+}
+
+#loginBody {
+    height: auto;
+    overflow: hidden;
 }
 
 /*
@@ -546,7 +551,7 @@ body {
   justify-content: center;
   align-items: center;  
 }
-.sns_button li a i.fa-twitter{ color: #66ccff; }
+.sns_button li a i.fa-x-twitter{ color: #66ccff; }
 .sns_button li a i.fa-facebook-square{ color: #3366cc; }
 .sns_button li a i.fa-line{ color: #33cc33; }
 .sns_button li a i.fa-get-pocket{ color: #ff0000; }

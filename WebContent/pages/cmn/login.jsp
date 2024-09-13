@@ -128,7 +128,7 @@
 <div id="wrapper">
 	
 
-	<div id="businessBody">
+	<div id="loginBody">
 		<div align="center">
 			<div style="font-size:25px; font-family: 'Noto Sans Japanese', sans-serif;">
 			</div>
@@ -162,7 +162,7 @@
         &copy; 2024 風と愉快な仲間たち Co.,Ltd. All rights reserved.
         <p></p>
         <ul class="sns_button">
-  			<li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-twitter"></i></a></li>
+  			<li><a href="#" target="_blank" rel="nofollow"><i class="fa-brands fa-x-twitter"></i></a></li>
   			<li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-facebook-square"></i></a></li>
   			<li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-line"></i></a></li>
   			<li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-get-pocket"></i></a></li>
