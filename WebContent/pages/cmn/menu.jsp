@@ -49,7 +49,7 @@
         <table class="full-width">
           <tr>
             <td id="headLeft">
-            	<div>
+            	<div  style="color: white;">
         			社員ID: <%= userId %><br>
         			社員名: <%= userName %>
     			</div>
