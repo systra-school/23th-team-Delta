@@ -21,7 +21,7 @@ errorbody {
 /*
 * ヘッダー、フッター共通定義
 */
-#header,#businessBody,#footer {
+#header,#businessBody/*,#footer */{
     width: 100%;
     padding: 5px;
     padding-top:20px;
@@ -109,29 +109,41 @@ errorbody {
 */
 #footer {
 	display: flex;
-   justify-content: center;
-    align-items: center;
+   justify-content: space-between;
+   padding:10px;
+   
+    /*align-items: center;
     top: 2px;
     height: 60px;
     bottom: 1%;
     height: 70px;
-    width: 100%;
+    width: 100%;*/
 }
 #footLeft {
-    float:left;
+	display:flex;
+	align-items:center;
+    /*float:left;
     width:15px;
-    text-align:left;
+    text-align:left;*/
     
 }
 #footCenter {
-    width:70%;
-    text-align:center;
+	display:flex;
+	align-items:center;
+    /*width:70%;
+    text-align:center;*/
 }
 #footRight {
-    float:right;
+	display:flex;
+	align-items:center;
+    /*float:right;
     width:15px;
-    text-align:right;
+    text-align:right;*/
 }
+
+ #footRight input {
+            margin-left: 10px; /* ボタン間のスペース */
+        }
 
 #copyrightfootCenter {
     width: 100%;

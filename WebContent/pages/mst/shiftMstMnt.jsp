@@ -228,22 +228,23 @@
           </div>
         </html:form>
       </div>
-      <div id="footer">
-        <table>
-          <tr>
-            <td id="footLeft">
+      
+    </div>
+    
+    <footer id="footer">
+        
+            <div id="footLeft">
               　
-            </td>
-            <td id="footCenter">
+            </div>
+            <div id="footCenter">
               　
-            </td>
-            <td id="footRight">
+            </div>
+            <div id="footRight">
               <input value="新規登録" type="button" class="smallButton"  onclick="shiftMstMntRegisterInit()" />
               <input value="更新" type="button" class="smallButton"  onclick="shiftMstMntUpdate()" />
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
+            </div>
+          
+      </footer>
+    
   </body>
 </html>
