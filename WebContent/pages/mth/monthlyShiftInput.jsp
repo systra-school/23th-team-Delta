@@ -480,26 +480,26 @@ body {
 			/
 			<bean:write name="monthlyShiftInputForm" property="maxPage" />
 		</div>
-		<div id="footer">
-			<table>
-				<tr>
-					<td id="footLeft">
-						<div style="margin-left: 22px; white-space: nowrap;">
-							<input value="凡例表示" type="button" class="longButton"
-								onclick="openWindow()" /> <input value="基本シフト反映" type="button"
-								class="longButton" onclick="submitImportKihon()" /> <input
-								value="出勤希望日反映" type="button" class="longButton"
-								onclick="submitWorkDateRequest()" />
-						</div>
-					</td>
-					<td id="footCenter" style="text-align: right;"></td>
-					<td id="footRight"><input value="登録" type="button"
-						class="smallButton" onclick="submitRegister()" /></td>
-				</tr>
-			</table>
-		</div>
+		
 
 	</div>
 	</div>
+	
+	<div id="footer">
+		<div id="footLeft">
+			<div style="margin-left: 22px; white-space: nowrap;">
+				<input value="凡例表示" type="button" class="longButton"
+				onclick="openWindow()" /> <input value="基本シフト反映" type="button"
+				class="longButton" onclick="submitImportKihon()" /> <input
+				value="出勤希望日反映" type="button" class="longButton"
+				onclick="submitWorkDateRequest()" />
+			</div>
+		</div>
+			<div id="footCenter" style="text-align: right;"></div>
+			<div id="footRight"><input value="登録" type="button"
+				class="smallButton" onclick="submitRegister()" /></div>
+				
+	</div>
+	
 </body>
 </html>
