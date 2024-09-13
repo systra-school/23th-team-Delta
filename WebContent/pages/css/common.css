@@ -32,13 +32,13 @@ errorbody {
 * ヘッダー定義
 */
 #header {
-	justify-content: center;
-    align-items: center;
+	display: flex;
+    justify-content: center; /* 中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    width: 100%;
+	background-color:#7BD3EA;
     top: 2px;
     height: 60px;
-    bottom: 1%;
-    height: 70px;
-    width: 100%;
     
 }
 #headLeft {
@@ -108,6 +108,10 @@ errorbody {
 * フッター定義
 */
 #footer {
+   justify-content: center;
+    align-items: center;
+    top: 2px;
+    height: 60px;
     bottom: 1%;
     height: 70px;
     width: 100%;
