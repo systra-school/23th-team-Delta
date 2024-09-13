@@ -139,18 +139,12 @@
   
     <style>
   .tableHeader, .tableBody {
-    width: 100%;
+    width: 80%;
+    border-collapse: collapse;
     table-layout: fixed;
-  }
-
-  .tableHeader td, .tableBody td {
-    width: 100px; 
-  }
-
- 
-  .tableContainer {
     margin: 0 auto;
-    width: 1080px; 
+  }
+
 </style>
   </head>
   <body>
@@ -171,7 +165,7 @@
       <div id="businessBody">
         <html:form action="/employeeMstMntRegister" >
           <div style="width: 100%;">
-            <div style="float: left; width: 804px; text-align: left; margin-left:100px;font-size:20px;">
+            <div style="float: left; width: 500px; text-align: left; margin-left:10%;font-size:20px;">
               表示年月：
               <html:select name="workRecordInputForm" property="yearMonth" onchange="submitSearch()">
               <html:optionsCollection name="workRecordInputForm"
@@ -180,7 +174,7 @@
                                       label="value"/>
               </html:select>
             </div>
-            <div style="float: right; width: 284px; text-align: left;font-size:18px;">
+            <div style="float: right; width: 500px; text-align: right; margin-right:10%; font-size:18px;">
               社員ID&nbsp;<bean:write name="workRecordInputForm" property="employeeId"/>
               ：社員名&nbsp; <bean:write name="workRecordInputForm" property="employeeName"/>
             </div>
@@ -216,7 +210,7 @@
                 <td width="100px" align="center">
                   休日
                 </td>
-                <td width="220px" align="center">
+                <td width="300px" align="center">
                   備考
                 </td>
               </tr>
@@ -225,14 +219,14 @@
             
             
             
-            <div style="height:450px;">
+            <div style="height:500px;">
             	
             	<table class="tableBody">
             	<logic:iterate id="workRecordInputList" name="workRecordInputForm" property="workRecordInputList" indexId="idx">
               
                 <tr>
                   <html:hidden name="workRecordInputList" property="employeeId" />
-                  <td width="80px" align="center" height="80px">
+                  <td width="80px" align="center" height="55px">
                     <bean:write name="workRecordInputList" property="workDayDisp" /><br>
                   </td>
                   <bean:define id="weekDay" name="workRecordInputList" property="weekDay"/>
@@ -273,8 +267,8 @@
                     <bean:write name="workRecordInputList"  property="holidayTime"/> 
                     <br> 
                    </td>
-                  <td width="300px" align="left">
-                    <html:text style="text-align:left" size="21" name="workRecordInputList" property="remark" indexed="true">備考</html:text><br>
+                  <td width="300px" align="center">
+                    <html:text style="width: 90%; box-sizing: border-box; text-align:left" size="21" name="workRecordInputList" property="remark" indexed="true" >備考</html:text><br>
                   </td>
                 </tr>
              
@@ -284,6 +278,9 @@
           </div>
         </html:form>
       </div>
+    
+    </div>
+    
      <footer id="footer">
               <div id="footLeft">
                 　
@@ -295,6 +292,6 @@
                 <input value="登録"  type="button" class="smallButton"  onclick="register()" />
               </div>
     </footer>
-    </div>
+    
   </body>
 </html>
