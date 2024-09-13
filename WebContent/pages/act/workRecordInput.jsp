@@ -284,21 +284,17 @@
           </div>
         </html:form>
       </div>
-      <div id="footer">
-        <table>
-          <tr>
-              <td id="footLeft">
+     <footer id="footer">
+              <div id="footLeft">
                 　
-              </td>
-              <td id="footCenter">
+              </div>
+              <div id="footCenter">
                 　
-              </td>
-              <td id="footRight">
+              </div>
+              <div id="footRight">
                 <input value="登録"  type="button" class="smallButton"  onclick="register()" />
-              </td>
-          </tr>
-        </table>
-    </div>
+              </div>
+    </footer>
     </div>
   </body>
 </html>
