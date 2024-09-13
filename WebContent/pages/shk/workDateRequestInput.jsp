@@ -1,4 +1,3 @@
-<!-- workDateRequestInput.jsp -->
 <%@page import="constant.CommonConstant.DayOfWeek"%>
 <%@page import="business.logic.utils.CheckUtils"%>
 <%@page import="form.common.DateBean"%>
@@ -21,9 +20,9 @@
 <%@taglib uri="http://struts.apache.org/tags-logic" prefix="logic"%>
 <%@taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 
-<bean:size id="dateBeanListSize" name="workDateRequestInputForm"  property="dateBeanList"/>
+<bean:size id="dateBeanListSize" name="workDateRequestInputForm" property="dateBeanList"/>
 <bean:define id="color" value="" type="java.lang.String"/>
-<bean:define id="showLength" value= "userId" type="java.lang.String"/>
+<bean:define id="showLength" value="userId" type="java.lang.String"/>
 <bean:define id="shiftId" value="" type="java.lang.String"/>
 
 <html lang="ja">
@@ -34,70 +33,114 @@
     <script type="text/javascript" src="/kikin-for-Struts-bug/pages/js/common.js"></script>
     <script type="text/javascript" src="/kikin-for-Struts-bug/pages/js/checkCommon.js"></script>
     <script type="text/javascript" src="/kikin-for-Struts-bug/pages/js/message.js"></script>
-    <script type="text/javascript" >
-	/**
+    
+    <style>
+        /* モーダルウィンドウのスタイル */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+
+    <script type="text/javascript">
+    /**
      * 登録
      */
     function submitRegister() {
         // サブミット
         doSubmit('/kikin-for-Struts-bug/workDateRequestInputRegister.do');
     }
+
     /**
      * 検索
      */
     function submitSearch() {
         doSubmit('/kikin-for-Struts-bug/workDateRequestInputSearch.do');
     }
+
     /**
      * サブウィンドウを開く
      */
-    function openWindow(){
+    function openWindow() {
         window.open("/kikin-for-Struts-bug/shiftPattern.do?param=", "windowBPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
     }
-    function openSearch(){
-    	window.open("/kikin-for-Struts-bug/workDateRequestCheckSubInit.do?param=", "searchPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=1000px, height=600px");
+
+    function openSearch() {
+        window.open("/kikin-for-Struts-bug/workDateRequestCheckSubInit.do?param=", "searchPopup", "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=1000px, height=600px");
     }
     
-    var str = user_Id;
-    var result = str.substring(2,5);
-    var userId = result - 0;
-    
+    function openModal() {
+        document.getElementById('modal').style.display = 'block';
+    }
+
+    function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+    }
     </script>
+
     <title>出勤希望入力画面</title>
     <link href="/kikin-for-Struts-bug/pages/css/common.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="/kikin-for-Struts-bug/pages/img/icon.jpg" type="image/x-icon">
     
-</head>
-<body>
-	<%String user_id = (String)session.getAttribute("session_cmn_login_user_id");  %>
-	
-	<header id = "header">
-			
-            		<div id="headLeft">
-              			<input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
-            		</div>
-            		<div id="headCenter">
-              			出勤希望入力
-            		</div>
-            		<div id="headRight">
-              			<input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
-            		</div>
-          		
-      	</header>
-	<div id = "wrapper">
-		
-      	<div id="businessBody" style="overflow: hidden;">
-        <div style="margin-left:5%;">
-          <html:form action="/workDateRequestInputInit" >
-            表示年月：
-            <html:select name="workDateRequestInputForm" property="yearMonth" onchange="submitSearch()">
-            	<html:optionsCollection name="workDateRequestInputForm"
-                                    property="yearMonthCmbMap"
-                                    value="key"
-                                    label="value"/>
-            </html:select>
-            <div>
-              <table class="widthTable">
+  </head>
+
+  <body>
+    <% String user_id = (String)session.getAttribute("session_cmn_login_user_id"); %>
+
+    <header id="header">
+        <div id="headLeft">
+            <input value="戻る" type="button" class="smallButton" onclick="doSubmit('/kikin-for-Struts-bug/menu.do')" />
+        </div>
+        <div id="headCenter">
+            出勤希望入力
+        </div>
+        <div id="headRight">
+            <input value="ログアウト" type="button" class="smallButton" onclick="logout()" />
+        </div>
+    </header>
+
+    <div id="wrapper">
+        <div id="businessBody" style="overflow: hidden;">
+            <div style="margin-left:5%;">
+                <html:form action="/workDateRequestInputInit">
+                    表示年月：
+                    <html:select name="workDateRequestInputForm" property="yearMonth" onchange="submitSearch()">
+                        <html:optionsCollection name="workDateRequestInputForm"
+                            property="yearMonthCmbMap"
+                            value="key"
+                            label="value"/>
+                    </html:select>
+                    <div>
+                        <table class="widthTable">
                 <tr>
                   <td width="150px" valign="top">
                     <table class="tableBody">
@@ -174,28 +217,39 @@
                   </td>
                 </tr>
               </table>
+                    </div>
+                </html:form>
             </div>
-		 </html:form>
         </div>
-       </div>
-	<div id="footer">
-        <table>
-          <tr>
-            <td id="footLeft">
-            	<input value="凡例表示" type="button" class="longButton"  onclick="openWindow()" />
-            	<input value="出勤希望日参照" type="button" class="longButton"  onclick="openSearch()" />
-            </td>
-            <td id="footCenter">
-              　
-            </td>
-            <td id="footRight">
-            	 <div style="margin-right:30px; margin-top: 150px;">
-            	<input value="登録" type="button" class="longButton"  onclick="submitRegister()" />
-				</div>
-            </td>
-          </tr>
-        </table>
-      </div>
+
+        <div id="footer">
+            <table>
+                <tr>
+                    <td id="footLeft">
+                        <input value="凡例表示" type="button" class="longButton" onclick="openWindow()" />
+                        <input value="出勤希望日参照" type="button" class="longButton" onclick="openSearch()" />
+                        <input value="給与アップの秘訣" type="button" class="longButton" onclick="openModal()" />
+                    </td>
+                    <td id="footCenter">　</td>
+                    <td id="footRight">
+                        <div style="margin-right:30px; margin-top: 150px;">
+                            <input value="登録" type="button" class="longButton" onclick="submitRegister()" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- モーダルウィンドウの内容 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>給与アップの秘訣</h2>
+            <img src="/kikin-for-Struts-bug/pages/img/penny.peg" alt="給与アップの秘訣" style="width:100%; height:auto;">
+            <br>
+            <input type="button" value="ごめんなさい…" class="longButton" onclick="closeModal()">
+        </div>
     </div>
   </body>
 </html>
