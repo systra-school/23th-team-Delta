@@ -19,6 +19,8 @@ public class ShiftMstMntForm extends ActionForm {
 
     /** シフト */
     private List<ShiftMstMntBean> shiftMstMntBeanList;
+    
+    private String filterShiftType;
 
     public List<ShiftMstMntBean> getShiftMstMntBeanList() {
         return shiftMstMntBeanList;
@@ -27,5 +29,13 @@ public class ShiftMstMntForm extends ActionForm {
     public void setShiftMstMntBeanList(List<ShiftMstMntBean> shiftMstMntBeanList) {
         this.shiftMstMntBeanList = shiftMstMntBeanList;
     }
+
+	public String getFilterShiftType() {
+		return filterShiftType;
+	}
+
+	public void setFilterShiftType(String filterShiftType) {
+		 this.filterShiftType = filterShiftType;
+	}
     
 }

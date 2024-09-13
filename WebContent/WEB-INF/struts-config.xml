@@ -457,6 +457,20 @@
         scope="session">
         <forward name="success" path="/pages/shk/workDateRequestInput.jsp"/>
       </action>
+      
+      
+      <action path="/shiftFilterAction"
+        type="action.mst.ShiftFilterAction"
+        name="shiftMstMntForm"
+        scope="session"
+        validate="false"
+        input="/shiftMstMnt.jsp">
+    <forward name="success" path="/pages/mst/shiftMstMnt.jsp"/>
+	</action>
+      
+      
+      
+      
     </action-mappings>
 
     <controller bufferSize="4096" maxFileSize="256M" tempDir="/pages/sample"/>

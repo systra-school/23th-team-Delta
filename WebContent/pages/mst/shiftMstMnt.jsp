@@ -229,6 +229,21 @@
         </html:form>
       </div>
       
+      
+       <html:form action="/shiftFilterAction.do">
+    <label for="filter">シフトフィルター:</label>
+    <html:select property="filterShiftType">
+        <html:option value="all">全て表示</html:option>
+        <html:option value="regular">通常</html:option>
+        <html:option value="oso">遅出</html:option>
+        <html:option value="training">研修</html:option>
+        <html:option value="studentTraining">研修（学生）</html:option>
+         <html:option value="jita">時短</html:option>
+    </html:select>
+    <input type="submit" value="フィルター適用">
+   </html:form>	
+      
+      
     </div>
     
     <footer id="footer">
