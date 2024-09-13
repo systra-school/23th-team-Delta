@@ -50,8 +50,8 @@
           <tr>
             <td id="headLeft">
             	<div>
-        			ユーザーID: <%= userId %><br>
-        			ユーザー名: <%= userName %>
+        			社員ID: <%= userId %><br>
+        			社員名: <%= userName %>
     			</div>
             </td>
             <td id="headCenter">
