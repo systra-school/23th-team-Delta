@@ -158,16 +158,17 @@
   <table>
     <tr>
       <td id="footLeft"></td>
-      <td id="footCenter">
-        &copy; 2024 風と愉快な仲間たち Co.,Ltd. All rights reserved.
-        <p></p>
-        <ul class="sns_button">
-  			<li><a href="#" target="_blank" rel="nofollow"><i class="fa-brands fa-x-twitter"></i></a></li>
+      <td id="copyrightfootCenter">
+      <ul class="sns_button">
+  			<li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-twitter"></i></a></li>
   			<li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-facebook-square"></i></a></li>
   			<li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-line"></i></a></li>
-  			<li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-get-pocket"></i></a></li>
-  			<li><a href="#" target="_blank" rel="nofollow"><i class="fas fa-rss-square"></i></a></li>
+  			<li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-youtube"></i></a></li>
 		</ul>
+		<p></p>
+		
+        &copy; 2024 風と愉快な仲間たち Co.,Ltd. All rights reserved.
+        
       </td>
       <td id="footRight"></td>
     </tr>

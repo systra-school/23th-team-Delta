@@ -131,6 +131,17 @@ errorbody {
     width:400px;
     text-align:right;
 }
+
+#copyrightfootCenter {
+    width: 100%;
+    text-align: center;
+    position: fixed; /* 下部に固定 */
+    bottom: 0; /* ページの下部に配置 */
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1; /* 背景色を追加して見やすく */
+    padding: 10px; /* パディングで余白を調整 */
+}
 /*
 * エラーページ ヘッダー、フッター共通定義
 */
@@ -555,11 +566,10 @@ body {
   justify-content: center;
   align-items: center;  
 }
-.sns_button li a i.fa-x-twitter{ color: #66ccff; }
+.sns_button li a i.fa-twitter{ color: #66ccff; }
 .sns_button li a i.fa-facebook-square{ color: #3366cc; }
 .sns_button li a i.fa-line{ color: #33cc33; }
-.sns_button li a i.fa-get-pocket{ color: #ff0000; }
-.sns_button li a i.fa-rss-square{ color: #ff9900; }
+.sns_button li a i.fa-youtube{ color: #ff0000; }
 
 snsbody{
     vertical-align:middle; 
