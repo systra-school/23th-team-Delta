@@ -552,7 +552,7 @@ body {
 .sns_button li a i.fa-get-pocket{ color: #ff0000; }
 .sns_button li a i.fa-rss-square{ color: #ff9900; }
 
-body{
+snsbody{
     vertical-align:middle; 
     padding: 0;
     text-align: center;
