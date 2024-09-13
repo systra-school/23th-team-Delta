@@ -93,7 +93,7 @@
                 </tr>
               </table>
             </div>
-            <div style="height:200px;overflow:auto">
+            <div style="height:600px;overflow:auto">
               <table class="tableBody">
                 <logic:iterate id="baseShiftPatternBeanList" name="baseShiftMstMntForm"  property="baseShiftPatternBeanList" indexId="idx">
                   <tr style="height: 35px;">
