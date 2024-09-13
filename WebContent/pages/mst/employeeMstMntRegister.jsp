@@ -186,13 +186,13 @@
         </html:form>
        <div>
         
-        <div style="text-align:center; margin:0 auto;">
-    		<div style="display:inline-block; text-align:left;">
-    		<h1 style="color: red">※入力時の注意点※<br></h1>
-        		社員IDは登録時に自動で割り振られます<br>
-        		各項目は必須入力です<br>
-        		社員名カナは、半角カナで入力してください<br>
-        		管理者権限の選択忘れにご注意ください<br>
+        <div style="text-align:center; margin:0 auto; ">
+    		<div style="display:inline-block; text-align:left; border: 3px solid rgba(0, 89, 179, 0.5); padding: 0px 20px 20px 20px">
+    		<h3 style="color: red">※入力時の注意点※</h3>
+        		・社員IDは登録時に自動で割り振られます<br>
+        		・各項目は必須入力です<br>
+        		・社員名カナは、半角カナで入力してください<br>
+        		・管理者権限の選択忘れにご注意ください<br>
     		</div>
 		</div>
        </div>
