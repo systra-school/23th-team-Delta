@@ -88,7 +88,7 @@ String color = "";
           </div>
           
           <div style="width: 1075px; margin: 0 auto;">
-            <table class="tableHeader">
+            <table class="tableHeader" style="height:40px">
               <tr>
                 <td width="70px" align="center">
                   日付
