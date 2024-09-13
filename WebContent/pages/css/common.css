@@ -42,7 +42,7 @@ errorbody {
     
 }
 #headLeft {
-    width:15%;
+    width:auto;
     text-align:center;
 }
 #headCenter {

@@ -6,6 +6,7 @@
 <%@taglib uri="http://struts.apache.org/tags-logic" prefix="logic"%>
 <%@taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 
+
 <html lang="ja">
   <head>
     <meta http-equiv="Pragma" content="no-cache">
@@ -37,6 +38,10 @@
     </style>
   </head>
   <body>
+  <% 
+    String userId = (String) session.getAttribute(RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_ID); 
+    String userName = (String) session.getAttribute(RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_NAME); 
+	%>
   <div class="bird"></div>
 <div class="bird -type_2"></div>
 <div class="bird -type_3"></div>
@@ -44,6 +49,10 @@
         <table class="full-width">
           <tr>
             <td id="headLeft">
+            	<div>
+        			ユーザーID: <%= userId %><br>
+        			ユーザー名: <%= userName %>
+    			</div>
             </td>
             <td id="headCenter">
             <logic:equal name="<%=RequestSessionNameConstant.SESSION_CMN_LOGIN_USER_INFO %>"
