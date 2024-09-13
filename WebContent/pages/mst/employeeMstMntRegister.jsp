@@ -126,7 +126,7 @@
               <input value="戻る" type="button" class="smallButton"  onclick="doSubmit('/kikin-for-Struts-bug/employeeMstMntRegisterBack.do')" />
             </div>
             <div id="headCenter">
-              社員マスタメンテナンス画面（新規登録）
+              社員マスタメンテナンス（新規登録）
             </div>
             <div id="headRight">
             <input value="ログアウト" type="button" class="smallButton"  onclick="logout()" />
@@ -141,34 +141,34 @@
           <div style="width: 650px;text-align: left;  margin: 0 auto;">
             <table class="tableHeader">
               <tr>
-                <td width="150px" align="center">
+                <td width="150px" align="center" height="40px">
                   パスワード
                 </td>
-                 <td width="200px" align="center">
+                 <td width="200px" align="center" height="40px">
                   社員名
                 </td>
-                <td width="200px" align="center">
+                <td width="200px" align="center" height="40px">
                   社員名カナ
                 </td>
-                <td width="100px" align="center">
+                <td width="100px" align="center" height="40px">
                   権限
                 </td>
               </tr>
             </table>
           </div>
-          <div style="overflow: auto; height: 440px; width: 650px; margin: 0 auto; ">
+          <div style="overflow: auto;width: 650px; margin: 0 auto; ">
             <table class="tableBody">
               <tr>
-                <td width="150px"  align="center">
+                <td width="150px"  align="center" height="55px">
                   <html:password property="password"  value="" size="10" />
                 </td>
-                <td width="200px"  align="center">
+                <td width="200px"  align="center" height="55px">
                   <html:text property="employeeName" value="" size="20" />
                 </td>
-                 <td width="200px"  align="center">
+                 <td width="200px"  align="center" height="55px">
                   <html:text property="employeeNameKana" value="" size="20" />
                   </td>
-                <td width="100px" align="center">
+                <td width="100px" align="center" height="55px">
                   <html:select property="authorityId" value="01">
                     <html:optionsCollection name="employeeMstMntForm"
                                             property="authorityCmbMap"
@@ -180,21 +180,23 @@
               </tr>
             </table>
             <br>
-            <div style="font-size:30; text-align:center; margin:0 auto; color:red">
-           ※入力時の注意点※<br>
-            <br>
-            </div>
-					<div style="text-align:center; margin:0 auto;">
-    					<div style="font-size:20px; display:inline-block; text-align:left;">
-        					社員IDは登録時に自動で割り振られます<br>
-        					各項目は必須入力です<br>
-        					社員名カナは、半角カナで入力してください<br>
-        					管理者権限の選択忘れにご注意ください<br>
-    					</div>
-					</div>
-
+            
+					
           </div>
         </html:form>
+       <div>
+        
+        <div style="text-align:center; margin:0 auto;">
+    		<div style="display:inline-block; text-align:left;">
+    		<h1 style="color: red">※入力時の注意点※<br></h1>
+        		社員IDは登録時に自動で割り振られます<br>
+        		各項目は必須入力です<br>
+        		社員名カナは、半角カナで入力してください<br>
+        		管理者権限の選択忘れにご注意ください<br>
+    		</div>
+		</div>
+       </div>
+        
       </div>
     
     </div>

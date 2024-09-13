@@ -144,20 +144,20 @@
     <div id="wrapper">
      
       <div id="businessBody">
-        <html:form action="/shiftMstMntRegister.do">
+        <html:form action="/shiftMstMntRegister.do" style="margin-top: 60px;">
           <div style="width: 630px;  margin: 0 auto;">
             <table class="tableHeader">
               <tr>
-                <td width="180px" align="center">
+                <td width="180px" align="center" height="40px">
                   シフト名
                 </td>
-                <td width="70px" align="center">
+                <td width="70px" align="center" height="40px">
                   シンボル
                 </td>
-                <td width="270px" align="center">
+                <td width="270px" align="center" height="40px">
                   時間
                 </td>
-                <td width="100px" align="center">
+                <td width="100px" align="center" height="40px">
                   休憩
                 </td>
               </tr>
@@ -166,28 +166,28 @@
           <div style="overflow: auto; height: 400px; width: 630px;  margin: 0 auto;">
             <table class="tableBody">
               <tr>
-                <td width="180px"  align="center">
+                <td width="180px"  align="center" height="55px">
                   <html:text property="shiftName" size="20" maxlength="10"  value=""/>
                 </td>
-                <td width="70px"  align="center">
+                <td width="70px"  align="center" height="55px">
                   <html:text property="symbol" size="2" maxlength="2"  value=""/>
                 </td>
-                <td width="270px"  align="center">
+                <td width="270px"  align="center" height="55px">
                   <table class="full-width" >
                     <tr>
-                      <td align="center" class="non-border">
+                      <td align="center" class="non-border" height="55px">
                         <html:text property="startTime" size="5" maxlength="10" value=""/>
                       </td>
-                      <td align="center" class="non-border">
+                      <td align="center" class="non-border" height="55px">
                           &#xFF5E;
                       </td>
-                      <td align="center" class="non-border">
+                      <td align="center" class="non-border" height="55px">
                         <html:text property="endTime" size="5" maxlength="10" value=""/>
                       </td>
                     </tr>
                   </table>
                 </td>
-                <td width="100px"  align="center">
+                <td width="100px"  align="center" height="55px">
                   <html:text property="breakTime" size="5" maxlength="10" value=""/>
                 </td>
               </tr>
@@ -195,21 +195,22 @@
           </div>
         </html:form>
       </div>
-      <div id="footer">
-        <table>
-          <tr>
-            <td id="footLeft">
-              　
-            </td>
-            <td id="footCenter">
-              　
-            </td>
-            <td id="footRight">
-                <input value="登録" type="button" class="smallButton" onclick="shiftMstMntRegister()" />
-            </td>
-          </tr>
-        </table>
-      </div>
+      
     </div>
+    
+    <footer id="footer">
+        
+            <div id="footLeft">
+              　
+            </div>
+            <div id="footCenter">
+              　
+            </div>
+            <div id="footRight">
+                <input value="登録" type="button" class="smallButton" onclick="shiftMstMntRegister()" />
+            </div>
+          
+      </footer>
+    
   </body>
 </html>
