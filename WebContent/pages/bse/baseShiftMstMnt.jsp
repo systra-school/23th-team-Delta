@@ -116,7 +116,7 @@
           </div>
           <div id="data" style="width:600px; margin-left:0px; float:right">
             <div>
-              <table class="tableHeader">
+              <table class="tableHeader" style="height: 35px">
                 <tr>
                   <td width="200px" align="center">
                     社員名
@@ -148,7 +148,7 @@
             <div style="height:500px;overflow:auto">
               <table class="tableBody">
                 <logic:iterate id="baseShiftMstMntBeanList" name="baseShiftMstMntForm" property="baseShiftMstMntBeanList" indexId="idx">
-                  <tr style="height: 20px;">
+                  <tr style="height: 35px;">
                     <html:hidden name="baseShiftMstMntBeanList" property="employeeId" />
                     <td width="200px" align="center">
                       <bean:write property="employeeName" name="baseShiftMstMntBeanList"/>
