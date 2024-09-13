@@ -193,26 +193,25 @@ if (listSize > intShowLength) {
           </div>
         </html:form>
       </div>
-      <div id="footer">
-        <table>
-          <tr>
-            <td id="footLeft">
+      
+    </div>
+    <footer id="footer">
+        
+            <div id="footLeft">
               <input value="凡例表示" type="button" class="longButton"  onclick="openWindow()" />
               <input value="印刷" type="button" class="longButton"  onclick="submitPrint()" />
-            </td>
-            <td id="footCenter" style="text-align: right;">
-            </td>
-            <td id="footRight">
+            </div>
+            <div id="footCenter" style="text-align: right;">
+            </div>
+            <div id="footRight">
              <div style="width: 244px;">
 	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=back">前へ</html:link>
 	              <html:link href="/kikin-for-Struts-bug/monthlyShiftCheckPage.do?paging=next">次へ</html:link>
 	              <bean:write name="monthlyShiftCheckForm" property="countPage"/>/
 	              <bean:write name="monthlyShiftCheckForm" property="maxPage"/>
               </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
+            </div>
+         
+      </footer>
   </body>
 </html>
