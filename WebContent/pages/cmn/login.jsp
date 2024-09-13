@@ -161,9 +161,9 @@
       <td id="copyrightfootCenter">
       <ul class="sns_button">
   			<li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-twitter"></i></a></li>
-  			<li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-facebook-square"></i></a></li>
+  			<li><a href="https://www.facebook.com/systra.co.jp/" target="_blank" rel="nofollow"><i class="fab fa-facebook-square"></i></a></li>
   			<li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-line"></i></a></li>
-  			<li><a href="#" target="_blank" rel="nofollow"><i class="fab fa-youtube"></i></a></li>
+  			<li><a href="https://www.youtube.com/@S.YOSHIDA.safety" target="_blank" rel="nofollow"><i class="fab fa-youtube"></i></a></li>
 		</ul>
 		<p></p>
 		
