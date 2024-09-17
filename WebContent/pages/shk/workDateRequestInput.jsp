@@ -76,8 +76,17 @@
      * 登録
      */
     function submitRegister() {
+    	
+    	 /// 登録確認のポップアップを表示
+        if (!confirm("この内容で登録しますか？")) {
+            // キャンセルされた場合、処理を中断
+            return false;
+        }
+    	 
         // サブミット
         doSubmit('/kikin-for-Struts-bug/workDateRequestInputRegister.do');
+        
+        alert("登録に成功しました！");
     }
 
     /**
