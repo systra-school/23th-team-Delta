@@ -542,7 +542,7 @@ errorbody {
 }
 
 /****** Base style. ******/
-body {
+snsbasebody {
   overflow: hidden;
   height: 100vh;
   margin: 0;
