@@ -31,6 +31,13 @@
   }
 }
 
+/* モーダルコンテンツのサイズ調整 */
+.modal-content {
+  width: 40%; /* サイズを小さく調整 */
+  max-width: 600px; /* 最大幅を指定 */
+  padding: 20px; /* 内側の余白を追加 */
+}
+
 /* ボタンのアニメーション */
 .animated-button {
   transition: transform 0.2s, background-color 0.3s;
@@ -41,7 +48,7 @@
   background-color: #ffcc00; /* ボタンをホバーしたときの色 */
 }
 
-/* モーダルのフェードインエフェクト */
+/* モーダルの表示設定 */
 .modal {
   display: none;
   opacity: 0;
@@ -60,4 +67,13 @@
 
 .page-exit {
   animation: fadeOut 0.5s forwards; /* 出場時のアニメーション */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

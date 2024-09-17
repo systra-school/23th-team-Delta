@@ -4,9 +4,9 @@
 body {
     background-color: #FEFCF3;
     overflow: hidden;
-    width:100%;
+    width: 100%;
     font-family: "BIZ UDPGothic", sans-serif;
-    margin: 20px; /* ページ全体に上下のマージンを追加 */
+    margin: 0; /* ページ全体のマージンを削除 */
     padding: 0;
 }
     
@@ -34,14 +34,15 @@ errorbody {
 * ヘッダー定義
 */
 #header {
-	display: flex;
+    display: flex;
     justify-content: center; /* 中央揃え */
     align-items: center; /* 垂直方向の中央揃え */
     width: 100%;
-	background-color:#7BD3EA;
-    top: 2px;
-    height: 60px;
-    
+    background-color: #7BD3EA;
+    top: 0; /* 上部からの距離を削除 */
+    height: 80px;
+    margin: 0; /* ヘッダーのマージンを削除 */
+    padding: 0; /* ヘッダーのパディングを削除 */
 }
 #headLeft {
     width:15%;
@@ -606,12 +607,11 @@ snsbody{
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 上から15%の位置に中央揃え */
+    margin: 5% auto; /* 上下のマージンを少し小さくする */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* スクリーンサイズに応じて調整 */
+    width: 90%; /* スクリーンサイズに応じて調整 */
 }
-
 .show-modal {
     display: block; /* モーダルを表示 */
 }
