@@ -54,7 +54,7 @@
           <div id="pattern" style="width:470px; margin-left:20px; float:left">
             <div>
               <table class="tableHeader" style="width: 100%; border-collapse: collapse;">
-                <tr>
+                <tr style="height: 25px;">
                   <td width="150px" align="center">
                     シフト名
                   </td>
@@ -73,7 +73,7 @@
             <div style="height:450px;overflow:auto">
               <table class="tableBody" style="width: 100%; border-collapse: collapse;">
                 <logic:iterate id="shiftPatternBeanList" name="shiftPatternForm"  property="shiftPatternBeanList" indexId="idx">
-                  <tr>
+                  <tr style="height: 30px;">
                     <td width="150px" align="center">
                       <bean:write property="shiftName" name="shiftPatternBeanList"/>
                     </td>
