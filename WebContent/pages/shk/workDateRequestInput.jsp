@@ -257,7 +257,7 @@
             <h2>給与アップの秘訣</h2>
             <img src="/kikin-for-Struts-bug/pages/img/penny.png" alt="給与アップの秘訣" style="width:100%; height:auto;">
             <br>
-            <input type="button" value="ごめんなさい…" class="longButton" onclick="closeModal()">
+            <input type="button" value="ｲｲｴ ｻｲｺｰ ﾃﾞｽ" class="longButton" onclick="closeModal()">
         </div>
     </div>
   </body>
