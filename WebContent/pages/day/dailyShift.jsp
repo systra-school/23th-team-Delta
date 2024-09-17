@@ -1031,6 +1031,9 @@
               　
             </td>
             <td id="footCenter">
+            <div class="pie-chart-1">
+    <span>気合33%</span>
+</div>
               　
             </td>
             <td id="footRight">
