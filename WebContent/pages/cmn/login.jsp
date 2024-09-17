@@ -39,10 +39,10 @@
 
   .modal-content {
   background-color: #fefefe;
-  margin: 10% auto;
+  margin: 0% auto;
   padding: 10px;
   border: 1px solid #888;
-  width: 40%;
+  width: 60%;
   font-family: 'Zen Old Mincho', serif; /* Applied to all content inside the modal */
 }
 
@@ -53,13 +53,13 @@
 }
 
 .modal-content p {
-  font-size: 35px;
+  font-size: 40px;
   color: #333;
 }
 
 .modal-buttons button {
   font-family: 'Zen Old Mincho', serif; /* Ensure buttons inherit the same font */
-  font-size: 16px;
+  font-size: 35px;
   margin: 5px; /* Add margin for spacing between buttons */
 }
 

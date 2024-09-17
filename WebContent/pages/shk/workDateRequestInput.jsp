@@ -44,12 +44,12 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: #ff0000;
         }
 
         .modal-content {
-            background-color: white;
-            margin: 15% auto;
+            background-color: #000000;
+            margin: 5% auto;
             padding: 20px;
             border: 1px solid #888;
             width: 40%;

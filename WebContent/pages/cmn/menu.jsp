@@ -25,8 +25,8 @@
   	<style>
   	.flex-container {
     display: flex;
-    justify-content: center; /* 中央揃え */
-    align-items: center; /* 垂直方向の中央揃え */
+    justify-content: center;
+    align-items: center;
     width: 100%;
 	}
     .flex {
