@@ -1,0 +1,63 @@
+/* 全体ページのフェードインアニメーション */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* モーダルのスライドインアニメーション */
+.slide-in {
+  transform: translateY(-100%);
+  opacity: 0;
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ボタンのアニメーション */
+.animated-button {
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.animated-button:hover {
+  transform: scale(1.1);
+  background-color: #ffcc00; /* ボタンをホバーしたときの色 */
+}
+
+/* モーダルのフェードインエフェクト */
+.modal {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.show-modal {
+  display: block;
+  opacity: 1;
+}
+
+/* ページ遷移用のクラス */
+.page-enter {
+  animation: fadeIn 0.5s forwards; /* 入場時のアニメーション */
+}
+
+.page-exit {
+  animation: fadeOut 0.5s forwards; /* 出場時のアニメーション */
+}

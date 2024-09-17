@@ -6,8 +6,10 @@ body {
     overflow: hidden;
     width:100%;
     font-family: "BIZ UDPGothic", sans-serif;
-    
+    margin: 20px; /* ページ全体に上下のマージンを追加 */
+    padding: 0;
 }
+    
 errorbody {
     background-color: red;
 }
@@ -588,4 +590,28 @@ snsbody{
     vertical-align:middle; 
     padding: 0;
     text-align: center;
+}
+
+.modal {
+    display: none; /* モーダルをデフォルトで非表示 */
+    position: fixed; /* 固定位置にする */
+    z-index: 1000; /* 他のコンテンツの上に表示 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* 必要に応じてスクロール可能に */
+    background-color: rgba(0,0,0,0.4); /* 半透明の背景色 */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 上から15%の位置に中央揃え */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* スクリーンサイズに応じて調整 */
+}
+
+.show-modal {
+    display: block; /* モーダルを表示 */
 }
