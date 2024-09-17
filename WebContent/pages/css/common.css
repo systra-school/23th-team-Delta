@@ -615,3 +615,27 @@ snsbody{
 .show-modal {
     display: block; /* モーダルを表示 */
 }
+
+.balloon-002 {
+	
+	
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 300px;
+    margin-top: 15px;
+    padding: .8em 1.2em;
+    border-radius: 5px;
+    background-color: #f04c4c;
+    color: #333333;
+}
+
+.balloon-002::before {
+    position: absolute;
+    top: -15px;
+    width: 30px;
+    height: 15px;
+    background-color: #f04c4c;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    content: '';
+}

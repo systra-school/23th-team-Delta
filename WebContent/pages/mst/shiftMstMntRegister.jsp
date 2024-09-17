@@ -163,7 +163,7 @@
               </tr>
             </table>
           </div>
-          <div style="overflow: auto; height: 400px; width: 630px;  margin: 0 auto;">
+          <div style="overflow: auto; height: 100px; width: 630px;  margin: 0 auto;">
             <table class="tableBody">
               <tr>
                 <td width="180px"  align="center" height="55px">
@@ -194,6 +194,21 @@
             </table>
           </div>
         </html:form>
+         <style>
+  .balloon-002 {
+    background-color: #f44336; /* 赤色の背景 */
+    color: white; /* テキスト色 */
+    padding: 10px; /* 吹き出し内の余白 */
+    margin: 20px auto; /* 上下に20pxの余白と中央揃え */
+    width: fit-content; /* コンテンツの幅に合わせる */
+    border-radius: 10px; /* 角を丸くする */
+    text-align: left; /* テキストの左寄せ */
+  }
+</style>
+         <div class="balloon-002">
+   シフト名は分かりやすい名前にして。<br>
+   過重労働は法律違反です。
+</div>
       </div>
       
     </div>
